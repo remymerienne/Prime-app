@@ -1,0 +1,97 @@
+Initialisation de npm et installation des dépendances de développement :
+************************************************************************
+
+=> npm init -y (--yes)
+
+Liste de mes dépendances :
+--------------------------
+webpack >> webpack webpack-cli
+babel loader >> babel-loader @babel/core @babel/preset-env @babel/plugin-transform-arrow-functions
+divers >> sass eslint
+testing >> jest @testing-library/dom @types/jest
+(@testing-library/dom >> a voir pour les customes matchers et user-event)
+
+Coller dans package.json :
+--------------------------
+"devDependencies": {
+  "@babel/core": "^7.17.5",
+  "@babel/plugin-transform-arrow-functions": "^7.16.7",
+  "@babel/preset-env": "^7.16.11",
+  "@testing-library/dom": "^8.11.3",
+  "@types/jest": "^27.4.1",
+  "babel-loader": "^8.2.3",
+  "eslint": "^8.10.0",
+  "jest": "^27.5.1",
+  "sass": "^1.49.9",
+  "webpack": "^5.70.0",
+  "webpack-cli": "^4.9.2"
+}
+
+=> npm install
+=> npm update (optionnelle)
+
+Commandes npm à coller dans package.json :
+------------------------------------------
+"build": "webpack --config webpack.config.js",
+"sass": "sass src/sass/app.scss src/css/app.css --watch",
+"purge": "purgecss --css src/css/app.css --content index.html dist/app.bundle.js -o dist",
+"test": "jest --watch --verbose",
+"test-cov": "jest --coverage"
+
+===============================================================================
+
+Sand box :
+**********
+
+=> json-server --w data_base.json (a revoir pour travail avec fetch)
+
+<!-- Pre-load-style -->
+<link rel="preload" href="./css/all.css" as="style">
+
+Git Flow :
+----------
+Main : Branche de distribution
+Develop : Branche de développement
+Feature : Développement de fonctionnalité
+Hotfix : Correction de bug critique
+Release : Préparation de version
+Support : Maintenance de version passée
+
+Extra :
+-------
+Chore : Autres tâches
+Experiment : Test de fonctionnalité ou autre...
+
+Modèle de commit :
+------------------
+[FIX] index (#9): change alt text images
+
+Alt text images must be different than images name in "Activity" section.
+
+Closes #9
+
+Bon lien de badges en markdown :
+--------------------------------
+https://github.com/Ileriayo/markdown-badges
+
+===============================================================================
+
+Webpack :
+*********
+
+Liens d'une config webpack :
+----------------------------
+https://www.geekco.fr/posts/fr/webpack-4-ma-configuration-pour-compiler-javascript-html-css-images-et-fonts
+
+===============================================================================
+
+Purgecss :
+**********
+
+=> npm i -g purgecss (installation en global seulement)
+
+Liens de la doc :
+-----------------
+https://purgecss.com/
+
+===============================================================================

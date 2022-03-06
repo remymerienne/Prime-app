@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@import
+  'abstracts/variables';
+//  'abstracts/functions',
+//  'abstracts/mixins';
+
+@import
+//  'vendors/minireset';
+//  'vendors/normalize';
+  'vendors/reset',
+  'vendors/fontawesome';
+
+// @import 
+// 'extend/placeholders';
+
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography';
+
+//@import
+//  'animations/';
+
+@import
+// 'layout/header',
+// 'layout/footer',
+  'layout/page';
+
+//@import
+//  'components/';
+
+//@import
+//  'pages/';
+
+//@import
+//  'themes/';

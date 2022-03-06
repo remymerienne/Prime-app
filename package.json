@@ -1,7 +1,7 @@
 {
   "name": "prime-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Base de travail",
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
@@ -14,8 +14,8 @@
     "type": "git",
     "url": "git+https://github.com/remymerienne/Prime-app.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Architecture, tips, memo, code, base"],
+  "author": "Rémy Merienne",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/remymerienne/Prime-app/issues"

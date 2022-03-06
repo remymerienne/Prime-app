@@ -3,3 +3,5 @@ import PrimeNumberList from '../containers/PrimeNumberList.js';
 
 new Dom();
 new PrimeNumberList();
+
+console.log('Rémy');

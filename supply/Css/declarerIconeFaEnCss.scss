@@ -1,0 +1,14 @@
+// - Projet error message
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f119";
+    font-size: 30px;
+  }
+}
