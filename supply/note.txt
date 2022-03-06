@@ -1,0 +1,36 @@
+***************************************
+
+webpack :
+---------
+- webpack webpack-cli
+
+***************************************
+
+babel loader :
+--------------
+- babel-loader @babel/core @babel/preset-env @babel/plugin-transform-arrow-functions
+
+***************************************
+
+divers:
+-------
+- sass 
+- eslint
+
+***************************************
+
+testing :
+---------
+- jest @testing-library/dom @types/jest
+
+***************************************
+
+commandes npm run... :
+----------------------
+"build": "webpack --config webpack.config.js",
+"sass": "sass src/sass/app.scss src/css/app.css --watch",
+"purge": "purgecss --css src/css/app.css --content index.html dist/app.bundle.js -o dist",
+"test": "jest --watch --verbose",
+"test-cov": "jest --coverage"
+
+***************************************
