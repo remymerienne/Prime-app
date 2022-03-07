@@ -17,7 +17,12 @@
     - [1.1.1. Initialisation de npm](#111-initialisation-de-npm)
     - [1.1.2. Installation des dépendances de développement](#112-installation-des-dépendances-de-développement)
   - [1.2. Purgecss](#12-purgecss)
-  - [1.3. Badges markdown et émoji](#13-badges-markdown-et-émoji)
+  - [1.3. Git et Github](#13-git-et-github)
+    - [1.3.1. Initialisation d'un dépôt](#131-initialisation-dun-dépôt)
+    - [1.3.2. Commiter les modifications](#132-commiter-les-modifications)
+    - [1.3.3. Modèle de commit](#133-modèle-de-commit)
+    - [1.3.4. Les branches](#134-les-branches)
+  - [1.4. Badges markdown et émoji](#14-badges-markdown-et-émoji)
 
 ## 1.1. npm
 
@@ -96,13 +101,101 @@ npm i -g purgecss
 ```
 
 Liens vers la documentation :  
-[https://purgecss.com/](https://purgecss.com)
+[https://purgecss.com](https://purgecss.com)
 
-## 1.3. Badges markdown et émoji
+## 1.3. Git et Github
+
+### 1.3.1. Initialisation d'un dépôt
+
+Après avoir créer un repo Github :
+
+Initialiser son dépôt en local :
+```bash
+git init
+git add -A
+git commit -m "init"
+git branch -M main
+git remote add origin https://github.com/mondepot/projet
+git push -u origin main
+```
+
+### 1.3.2. Commiter les modifications
+
+Sélection des fichiers à commiter :
+```bash
+git add <fichier>
+```
+
+Sélectionner tous les fichiers modifiés :
+```bash
+git add -A
+```
+
+Commit des fichiers sélectionnés sur la branche courante :
+```bash
+git commit -m "message de commit"
+```
+
+### 1.3.3. Modèle de commit
+
+```bash
+[FIX] index (#9): change alt text images
+
+Alt text images must be different than images name in "Activity" section.
+
+Closes #9
+```
+
+### 1.3.4. Les branches
+
+Voir les branches éxistantes :
+```bash
+git branch
+```
+
+Créer une nouvelle branche :
+```bash
+git branch <nouvelle branche>
+```
+
+Changer de branche :
+```bash
+git checkout <branche>
+```
+
+Push d'une branche local sur une branche distante :
+```bash
+git push <remote> <branche>
+```
+
+Push d'une nouvelle branche vers un dépôt distant :
+```bash
+git push -u <remote> <branche>
+```
+
+Renommer une branche :
+```bash
+git branch -m <old branch> <new name>
+```
+
+Supprimer une branche :
+```bash
+git branch -d <branche>
+```
+
+Supprimer une branche distante :
+```bash
+git push <remote> --delete <branche>
+```
+
+Liens vers la documentation :  
+[https://git-scm.com/docs](https://git-scm.com/docs) 
+
+## 1.4. Badges markdown et émoji
 
 Badges markdown :  
-[https://github.com/Ileriayo/markdown-badges](https://github.com/Ileriayo/markdown-badges)
-[https://github.com/alexandresanlim/Badges4-README.md-Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile)
+[https://github.com/Ileriayo/markdown-badges](https://github.com/Ileriayo/markdown-badges)  
+[https://github.com/alexandresanlim/Badges4-README.md-Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile)  
 [https://dev.to/envoy_/150-badges-for-github-pnk](https://dev.to/envoy_/150-badges-for-github-pnk)
 
 Complete list of github markdown emoji markup :  

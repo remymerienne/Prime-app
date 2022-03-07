@@ -3,8 +3,7 @@ Sand box :
 
 => json-server --w data_base.json (a revoir pour travail avec fetch)
 
-<!-- Pre-load-style -->
-<link rel="preload" href="./css/all.css" as="style">
+
 
 Git Flow :
 ----------
@@ -19,14 +18,6 @@ Extra :
 -------
 Chore : Autres tâches
 Experiment : Test de fonctionnalité ou autre...
-
-Modèle de commit :
-------------------
-[FIX] index (#9): change alt text images
-
-Alt text images must be different than images name in "Activity" section.
-
-Closes #9
 
 
 ===============================================================================
