@@ -1,0 +1,43 @@
+Sand box :
+**********
+
+=> json-server --w data_base.json (a revoir pour travail avec fetch)
+
+<!-- Pre-load-style -->
+<link rel="preload" href="./css/all.css" as="style">
+
+Git Flow :
+----------
+Main : Branche de distribution
+Develop : Branche de développement
+Feature : Développement de fonctionnalité
+Hotfix : Correction de bug critique
+Release : Préparation de version
+Support : Maintenance de version passée
+
+Extra :
+-------
+Chore : Autres tâches
+Experiment : Test de fonctionnalité ou autre...
+
+Modèle de commit :
+------------------
+[FIX] index (#9): change alt text images
+
+Alt text images must be different than images name in "Activity" section.
+
+Closes #9
+
+Bon lien de badges en markdown :
+--------------------------------
+https://github.com/Ileriayo/markdown-badges
+
+===============================================================================
+
+Webpack :
+*********
+
+Liens d'une config webpack :
+----------------------------
+https://www.geekco.fr/posts/fr/webpack-4-ma-configuration-pour-compiler-javascript-html-css-images-et-fonts
+
