@@ -28,9 +28,6 @@ Alt text images must be different than images name in "Activity" section.
 
 Closes #9
 
-Bon lien de badges en markdown :
---------------------------------
-https://github.com/Ileriayo/markdown-badges
 
 ===============================================================================
 
