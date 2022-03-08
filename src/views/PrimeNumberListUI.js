@@ -5,8 +5,8 @@ export default (numberArray) => {
 
   if (numberArray.length >= 1) {
     return (`
-      <div style="display: flex; align-items: flex-end ; justify-content: space-between">
-        <p style="font-size: 12px; margin-top: 15px">${getHowMany()} nombres trouvées</p>
+      <div>
+        <p>${getHowMany()} nombres trouvées</p>
         <a href="coverage/lcov-report/index.html" target="_blank">Test coverage</a>
       </div>
       <p class="prime-list" data-testid="prime-ok"> 
