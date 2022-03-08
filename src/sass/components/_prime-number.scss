@@ -1,0 +1,29 @@
+// ----------------------------------------------------------------------------
+// * This file contains very basic layouts.
+// ----------------------------------------------------------------------------
+
+.section-prime {
+  text-align: center;
+}
+
+.prime-form {
+  margin-top: 20px;
+}
+
+.prime-info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.prime-list {
+  width: fit-content;
+  margin: 10px auto 0 auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  line-height: 24px;
+}
+
+// * End
+// * ------------------------

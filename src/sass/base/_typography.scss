@@ -2,17 +2,15 @@
 // * This file contains very basic layouts.
 // ----------------------------------------------------------------------------
 
-.container {
-  display: flex;
-  justify-content: center;
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
 
-  .page {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1440px;
-  }
+h2 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 // * End
-// * ------------------------
+// * ------------------------ 

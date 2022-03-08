@@ -1,12 +1,14 @@
 export const primeNumberBlockUI = () => {
 
   return (`
-    <section>
+    <section class="section-prime">
       <header>
         <h2>Générateur de Nombres Premiers</h2>
       </header>
-      <label for="prime-up-to">Calculer les nombres premiers jusqu'à </label>
-      <input id="prime-up-to" data-testid="js-input" type="number">
+      <form class="prime-form" novalidate>
+        <label for="prime-up-to">Calculer les nombres premiers jusqu'à </label>
+        <input id="prime-up-to" data-testid="js-input" type="number">
+      </form>
       <div class="js-prime"></div>
     </section>
   `);
@@ -20,8 +22,10 @@ export const primeNumberListUI = (numberArray) => {
 
   if (numberArray.length >= 1) {
     return (`
-      <p>${getHowMany()} nombres trouvées</p>
-      <a href="coverage/lcov-report/index.html" target="_blank">Test coverage</a>
+      <div class="prime-info">
+        <p>${getHowMany()} nombres trouvées</p>
+        <a href="coverage/lcov-report/index.html" target="_blank">Test coverage</a>
+      </div>
       <p class="prime-list" data-testid="prime-ok">${getPrimeNumberRow()}</p>
     `);
   } else {

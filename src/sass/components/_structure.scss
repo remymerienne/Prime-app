@@ -1,0 +1,31 @@
+// ----------------------------------------------------------------------------
+// * This file contains very basic layouts.
+// ----------------------------------------------------------------------------
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  padding: 10px;
+}
+
+.header-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-seedling {
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+// * End
+// * ------------------------
