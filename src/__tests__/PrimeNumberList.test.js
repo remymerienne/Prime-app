@@ -3,8 +3,8 @@
  */
 
 import {fireEvent, screen} from '@testing-library/dom';
-import Dom from '../containers/Dom.js';
-import PrimeNumberList from '../containers/PrimeNumberList.js';
+import Dom from '../containers/Structure.js';
+import PrimeNumberList from '../containers/PrimeNumber.js';
 
 describe('Given I called PrimeNumberList class', () => {
   describe('When I use getPrimeNumberArray() method to generate a prime number array', () => {
