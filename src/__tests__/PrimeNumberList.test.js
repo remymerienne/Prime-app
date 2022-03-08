@@ -11,7 +11,7 @@ describe('Given I called PrimeNumberList class', () => {
     test('Then the generated array should be the same as the expected array', () => {
       new Dom();
       new PrimeNumberList();
-      fireEvent.keyUp(screen.getByTestId('jsinput'), {target: {value: 200}});
+      fireEvent.keyUp(screen.getByTestId('js-input'), {target: {value: 200}});
       expect(screen.getByTestId('prime-ok')).toBeTruthy;
     });
   });

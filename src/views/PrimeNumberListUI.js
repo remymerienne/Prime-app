@@ -5,13 +5,9 @@ export default (numberArray) => {
 
   if (numberArray.length >= 1) {
     return (`
-      <div>
-        <p>${getHowMany()} nombres trouvées</p>
-        <a href="coverage/lcov-report/index.html" target="_blank">Test coverage</a>
-      </div>
-      <p class="prime-list" data-testid="prime-ok"> 
-        ${getPrimeNumberRow()}
-      </p>
+      <p>${getHowMany()} nombres trouvées</p>
+      <a href="coverage/lcov-report/index.html" target="_blank">Test coverage</a>
+      <p class="prime-list" data-testid="prime-ok">${getPrimeNumberRow()}</p>
     `);
   } else {
     return (`

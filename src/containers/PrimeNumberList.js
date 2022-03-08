@@ -8,7 +8,7 @@ export default class {
     //     this.numberUpTo = e.target.value;
     //     this.displayPrimeNumberList();
     // });
-    this.numberUpTo = 200;
+    this.numberUpTo = 2000;
     this.displayPrimeNumberList();
   }
 
