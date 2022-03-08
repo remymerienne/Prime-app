@@ -170,11 +170,6 @@ Push d'une branche local sur une branche distante :
 git push <remote> <branche>
 ```
 
-Push d'une nouvelle branche vers un dépôt distant :
-```bash
-git push -u <remote> <branche>
-```
-
 Renommer une branche :
 ```bash
 git branch -m <old branch> <new name>
