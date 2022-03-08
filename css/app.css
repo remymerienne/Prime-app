@@ -6195,38 +6195,31 @@ readers do not read off random characters that represent icons */
   width: 1px;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
+h1 {
+  font-size: 30px;
 }
 
-p, h1 {
-  font-size: 30px;
+h2 {
+  font-size: 22px;
+}
+
+header {
+  text-align: center;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  background-color: #9256dc;
 }
-
-.page {
+.container .page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   max-width: 1440px;
-  background-color: hwb(291 93% 4%/0.796);
 }
 
 .prime-list {
-  width: fit-content;
-  margin: 20px auto 0 auto;
-  padding: 15px;
-  border: 1px solid black;
-  border-radius: 15px;
-  background-color: hwb(291 93% 4%/0.796);
-  font-size: 20px;
-  line-height: 30px;
+  border: 1px solid blue;
 }
 
 /*# sourceMappingURL=app.css.map */

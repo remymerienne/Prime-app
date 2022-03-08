@@ -3,11 +3,13 @@ import PrimeNumberListUI from '../views/PrimeNumberListUI.js';
 export default class {
 
   constructor() {
-    const elementListened = document.getElementById('prime-up-to');
-    elementListened.addEventListener('keyup', e => {
-        this.numberUpTo = e.target.value;
-        this.displayPrimeNumberList();
-    });
+    // const elementListened = document.getElementById('prime-up-to');
+    // elementListened.addEventListener('keyup', e => {
+    //     this.numberUpTo = e.target.value;
+    //     this.displayPrimeNumberList();
+    // });
+    this.numberUpTo = 200;
+    this.displayPrimeNumberList();
   }
 
   getPrimeNumberArray() {
