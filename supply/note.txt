@@ -3,7 +3,7 @@ Sand box :
 
 => json-server --w data_base.json (a revoir pour travail avec fetch)
 
-
+<link rel="preload" href="./src/css/app.css" as="style">
 
 Git Flow :
 ----------

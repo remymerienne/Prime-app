@@ -1,13 +1,15 @@
 {
-  "folders": [{
-    "name": "Prime-app",
-    "path": "./"
-  }],
+  "folders": [
+    {
+      "name": "Prime-app",
+      "path": "./"
+    }
+],
 
   "settings": {
 
     "liveServer.settings.multiRootWorkspaceName": "Prime-app",
-    "liveServer.settings.file": "index.html",
+    "liveServer.settings.file": "src/index.html",
     "liveServer.settings.port": 5500,
 
     "window.zoomLevel": 0,
