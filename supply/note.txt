@@ -5,6 +5,8 @@ Sand box :
 
 <link rel="preload" href="./src/css/app.css" as="style">
 
+live-server --port=8080 --open=
+
 Git Flow :
 ----------
 Main : Branche de distribution

@@ -87,10 +87,12 @@ npm update
 Commandes npm à coller dans package.json :
 ```json
 "build": "webpack --config webpack.config.js",
-"sass": "sass src/sass/app.scss src/css/app.css --watch",
-"purge": "purgecss --css src/css/app.css --content index.html dist/app.bundle.js -o dist",
+"sass": "sass src/sass/app.scss css/app.css --watch",
+"purge": "purgecss --css css/app.css --content dist/index.html dist/app.bundle.js -o dist",
 "test": "jest --watch --verbose",
-"test-cov": "jest --coverage"
+"test-cov": "jest --coverage",
+"server-src": "live-server --port=8080 --open=\"src/index.html\"",
+"server-dist": "live-server --port=8080 --open=\"dist/index.html\""
 ```
 
 ## 1.2. Purgecss
