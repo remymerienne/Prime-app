@@ -6217,7 +6217,6 @@ h2 {
   max-width: 1440px;
   padding: 10px;
 }
-
 .page-header {
   display: flex;
   flex-direction: row;
@@ -6225,13 +6224,12 @@ h2 {
   align-items: center;
   margin-top: 15px;
 }
-
-.fa-seedling {
+.page-header__logo {
   font-size: 25px;
   margin-left: 15px;
 }
 
-.prime-section {
+.prime {
   width: fit-content;
   max-width: 1024px;
   margin: 20px auto 0 auto;
@@ -6239,22 +6237,21 @@ h2 {
   border: 1px solid black;
   border-radius: 10px;
 }
-
 .prime-header {
   text-align: center;
 }
-
 .prime-form {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
 }
-
+.prime-form__input {
+  margin-top: 10px;
+}
 .prime-info {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-
 .prime-list {
   width: fit-content;
   margin: 10px auto 0 auto;
