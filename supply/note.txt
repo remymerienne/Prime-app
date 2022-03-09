@@ -1,8 +1,13 @@
 Sand box :
 **********
 
+Ajouter à README :
+
+- faire une section sur live-server
+
 => json-server --w data_base.json (a revoir pour travail avec fetch)
 
+<link rel="preload" href="./src/css/app.css" as="style">
 
 
 Git Flow :

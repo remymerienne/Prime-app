@@ -6143,8 +6143,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../fonts/fontawesome/fa-brands-400.eot");
-  src: url("../fonts/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../fonts/fontawesome/fa-brands-400.woff") format("woff"), url("../fonts/fontawesome/fa-brands-400.ttf") format("truetype"), url("../fonts/fontawesome/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("../src/fonts/fontawesome/fa-brands-400.eot");
+  src: url("../src/fonts/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../src/fonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../src/fonts/fontawesome/fa-brands-400.woff") format("woff"), url("../src/fonts/fontawesome/fa-brands-400.ttf") format("truetype"), url("../src/fonts/fontawesome/fa-brands-400.svg#fontawesome") format("svg");
 }
 .fab {
   font-family: "Font Awesome 5 Brands";
@@ -6156,8 +6156,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../fonts/fontawesome/fa-regular-400.eot");
-  src: url("../fonts/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-regular-400.woff2") format("woff2"), url("../fonts/fontawesome/fa-regular-400.woff") format("woff"), url("../fonts/fontawesome/fa-regular-400.ttf") format("truetype"), url("../fonts/fontawesome/fa-regular-400.svg#fontawesome") format("svg");
+  src: url("../src/fonts/fontawesome/fa-regular-400.eot");
+  src: url("../src/fonts/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../src/fonts/fontawesome/fa-regular-400.woff2") format("woff2"), url("../src/fonts/fontawesome/fa-regular-400.woff") format("woff"), url("../src/fonts/fontawesome/fa-regular-400.ttf") format("truetype"), url("../src/fonts/fontawesome/fa-regular-400.svg#fontawesome") format("svg");
 }
 .far {
   font-family: "Font Awesome 5 Free";
@@ -6169,8 +6169,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../fonts/fontawesome/fa-solid-900.eot");
-  src: url("../fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../fonts/fontawesome/fa-solid-900.woff") format("woff"), url("../fonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("../fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("../src/fonts/fontawesome/fa-solid-900.eot");
+  src: url("../src/fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../src/fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../src/fonts/fontawesome/fa-solid-900.woff") format("woff"), url("../src/fonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("../src/fonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg");
 }
 .fa,
 .fas {
@@ -6195,38 +6195,70 @@ readers do not read off random characters that represent icons */
   width: 1px;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
+h1 {
+  font-size: 30px;
+  font-weight: 700;
 }
 
-p, h1 {
-  font-size: 30px;
+h2 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  background-color: #9256dc;
 }
 
 .page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   max-width: 1440px;
-  background-color: hwb(291 93% 4%/0.796);
+  padding: 10px;
+}
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.page-header__logo {
+  font-size: 25px;
+  margin-left: 15px;
 }
 
+.prime {
+  width: fit-content;
+  max-width: 1024px;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.prime-header {
+  text-align: center;
+}
+.prime-form {
+  margin-top: 10px;
+  text-align: center;
+}
+.prime-form__input {
+  margin-top: 10px;
+}
+.prime-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
 .prime-list {
   width: fit-content;
-  margin: 20px auto 0 auto;
-  padding: 15px;
+  margin: 10px auto 0 auto;
+  padding: 10px;
   border: 1px solid black;
-  border-radius: 15px;
-  background-color: hwb(291 93% 4%/0.796);
-  font-size: 20px;
-  line-height: 30px;
+  border-radius: 10px;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=app.css.map */

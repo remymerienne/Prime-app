@@ -15,13 +15,15 @@
 - [1. Prime-app](#1-prime-app)
   - [1.1. npm](#11-npm)
     - [1.1.1. Initialisation de npm](#111-initialisation-de-npm)
-    - [1.1.2. Installation des dépendances de développement](#112-installation-des-dépendances-de-développement)
+    - [1.1.2. Liste des commandes de base](#112-liste-des-commandes-de-base)
+    - [1.1.3. Installation des dépendances de développement](#113-installation-des-dépendances-de-développement)
   - [1.2. Purgecss](#12-purgecss)
   - [1.3. Git et Github](#13-git-et-github)
     - [1.3.1. Initialisation d'un dépôt](#131-initialisation-dun-dépôt)
     - [1.3.2. Commiter les modifications](#132-commiter-les-modifications)
-    - [1.3.3. Modèle de commit](#133-modèle-de-commit)
-    - [1.3.4. Les branches](#134-les-branches)
+    - [1.3.3. Types de commit](#133-types-de-commit)
+    - [1.3.4. Modèle de commit](#134-modèle-de-commit)
+    - [1.3.5. Les branches](#135-les-branches)
   - [1.4. Badges markdown et émoji](#14-badges-markdown-et-émoji)
 
 ## 1.1. npm
@@ -32,10 +34,14 @@
 npm init -y
 ```
 
+### 1.1.2. Liste des commandes de base
+
+![supply/img_readme/npm-basic-commands.png](supply/img_readme/npm-basic-commands.png)
+
 Lien vers les options de package.json :  
 [https://docs.npmjs.com/cli/v8/configuring-npm/package-json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
 
-### 1.1.2. Installation des dépendances de développement
+### 1.1.3. Installation des dépendances de développement
 
 Liste des dépendances :
 - Webpack :
@@ -87,10 +93,12 @@ npm update
 Commandes npm à coller dans package.json :
 ```json
 "build": "webpack --config webpack.config.js",
-"sass": "sass src/sass/app.scss src/css/app.css --watch",
-"purge": "purgecss --css src/css/app.css --content index.html dist/app.bundle.js -o dist",
+"sass": "sass src/sass/app.scss css/app.css --watch",
+"purge": "purgecss --css css/app.css --content dist/index.html dist/app.bundle.js -o dist",
 "test": "jest --watch --verbose",
-"test-cov": "jest --coverage"
+"test-cov": "jest --coverage",
+"server-src": "live-server --port=8080 --open=\"src/index.html\"",
+"server-dist": "live-server --port=8080 --open=\"dist/index.html\""
 ```
 
 ## 1.2. Purgecss
@@ -136,7 +144,11 @@ Commit des fichiers sélectionnés sur la branche courante :
 git commit -m "message de commit"
 ```
 
-### 1.3.3. Modèle de commit
+### 1.3.3. Types de commit
+
+![supply/img_readme/commit-guide.png](supply/img_readme/commit-guide.png)
+
+### 1.3.4. Modèle de commit
 
 ```bash
 [FIX] index (#9): change alt text images
@@ -146,7 +158,7 @@ Alt text images must be different than images name in "Activity" section.
 Closes #9
 ```
 
-### 1.3.4. Les branches
+### 1.3.5. Les branches
 
 Voir les branches éxistantes :
 ```bash
@@ -168,11 +180,6 @@ Push d'une branche local sur une branche distante :
 git push <remote> <branche>
 ```
 
-Push d'une nouvelle branche vers un dépôt distant :
-```bash
-git push -u <remote> <branche>
-```
-
 Renommer une branche :
 ```bash
 git branch -m <old branch> <new name>
@@ -186,6 +193,11 @@ git branch -d <branche>
 Supprimer une branche distante :
 ```bash
 git push <remote> --delete <branche>
+```
+
+Ramener une branche sur la branche courante en concervant l'historique :
+```bash
+git merge --no-ff <branch>
 ```
 
 Liens vers la documentation :  
