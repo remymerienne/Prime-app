@@ -1,5 +1,5 @@
-import Dom from '../containers/Dom.js';
-import PrimeNumberList from '../containers/PrimeNumberList.js';
+import Dom from '../containers/Structure.js';
+import PrimeNumber from '../containers/PrimeNumber.js';
 
 new Dom();
-new PrimeNumberList();
+new PrimeNumber();

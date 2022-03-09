@@ -1,11 +1,14 @@
 Sand box :
 **********
 
+Ajouter à README :
+- git merge --no-ff <branch> => garder historique
+- faire une section sur live-server
+
 => json-server --w data_base.json (a revoir pour travail avec fetch)
 
 <link rel="preload" href="./src/css/app.css" as="style">
 
-live-server --port=8080 --open=
 
 Git Flow :
 ----------

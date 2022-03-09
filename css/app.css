@@ -6197,29 +6197,71 @@ readers do not read off random characters that represent icons */
 
 h1 {
   font-size: 30px;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 22px;
-}
-
-header {
-  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .container {
   display: flex;
   justify-content: center;
 }
-.container .page {
+
+.page {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
+  padding: 10px;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.fa-seedling {
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.prime-section {
+  width: fit-content;
+  max-width: 1024px;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.prime-header {
+  text-align: center;
+}
+
+.prime-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.prime-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .prime-list {
-  border: 1px solid blue;
+  width: fit-content;
+  margin: 10px auto 0 auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,39 @@
+// ----------------------------------------------------------------------------
+// * This file contains very basic layouts.
+// ----------------------------------------------------------------------------
+
+.prime-section {
+  width: fit-content;
+  max-width: 1024px;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.prime-header {
+  text-align: center;
+}
+
+.prime-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.prime-info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.prime-list {
+  width: fit-content;
+  margin: 10px auto 0 auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  line-height: 24px;
+}
+
+// * End
+// * ------------------------
