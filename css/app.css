@@ -6195,11 +6195,6 @@ readers do not read off random characters that represent icons */
   width: 1px;
 }
 
-header {
-  margin-top: 20px;
-  text-align: center;
-}
-
 h1 {
   font-size: 30px;
   font-weight: 700;
@@ -6223,11 +6218,12 @@ h2 {
   padding: 10px;
 }
 
-.header-page {
+.page-header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
 }
 
 .fa-seedling {
@@ -6235,12 +6231,22 @@ h2 {
   margin-left: 15px;
 }
 
-.section-prime {
+.prime-section {
+  width: fit-content;
+  max-width: 1024px;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.prime-header {
   text-align: center;
 }
 
 .prime-form {
   margin-top: 20px;
+  text-align: center;
 }
 
 .prime-info {

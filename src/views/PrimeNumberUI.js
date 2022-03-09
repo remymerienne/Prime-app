@@ -1,8 +1,8 @@
 export const primeNumberBlockUI = () => {
 
   return (`
-    <section class="section-prime">
-      <header>
+    <section class="prime-section">
+      <header class="prime-header">
         <h2>Générateur de Nombres Premiers</h2>
       </header>
       <form class="prime-form" novalidate>

@@ -5,13 +5,13 @@ export default class {
   constructor() {
     const main = document.querySelector('main.js-main');
     main.innerHTML = primeNumberBlockUI();
-    // const elementListened = document.getElementById('prime-up-to');
-    // elementListened.addEventListener('keyup', e => {
-    //     this.numberUpTo = e.target.value;
-    //     this.displayPrimeNumberList();
-    // });
-    this.numberUpTo = 100;
-    this.displayPrimeNumberList();
+    const elementListened = document.getElementById('prime-up-to');
+    elementListened.addEventListener('keyup', e => {
+        this.numberUpTo = e.target.value;
+        this.displayPrimeNumberList();
+    });
+    // this.numberUpTo = 100;
+    // this.displayPrimeNumberList();
   }
 
   getPrimeNumberArray() {
