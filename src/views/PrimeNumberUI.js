@@ -26,11 +26,11 @@ export const primeNumberListUI = (numberArray) => {
         <p>${getHowMany()} nombres trouvées</p>
         <a href="../coverage/lcov-report/index.html" target="_blank">Test coverage</a>
       </div>
-      <p class="prime-list" data-testid="prime-ok">${getPrimeNumberRow()}</p>
+      <p class="prime-list" data-testid="input-valid">${getPrimeNumberRow()}</p>
     `);
   } else {
     return (`
-      <div data-testid="prime-null"></div>
+      <div data-testid="input-null"></div>
     `);
   }
 
