@@ -10,8 +10,6 @@ export default class {
         this.numberUpTo = e.target.value;
         this.displayPrimeNumberList();
     });
-    // this.numberUpTo = 100;
-    // this.displayPrimeNumberList();
   }
 
   getPrimeNumberArray() {

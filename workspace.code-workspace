@@ -8,10 +8,6 @@
 
   "settings": {
 
-    "liveServer.settings.multiRootWorkspaceName": "Prime-app",
-    "liveServer.settings.file": "dist/index.html",
-    "liveServer.settings.port": 8080,
-
     "window.zoomLevel": 0,
 
   }
