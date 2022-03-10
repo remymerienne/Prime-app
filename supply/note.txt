@@ -4,6 +4,7 @@ Sand box :
 Ajouter à README :
 
 - faire une section sur live-server
+- pull et tags dans README
 
 => json-server --w data_base.json (a revoir pour travail avec fetch)
 

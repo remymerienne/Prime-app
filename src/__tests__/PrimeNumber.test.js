@@ -8,16 +8,16 @@ import Structure from '../containers/Structure.js';
 import PrimeNumber from '../containers/PrimeNumber.js';
 
 describe('Given I am on the homepage', () => {
-  describe('When I don\'t enter anything in the form', () => {
-    test('Then nothing is displayed', () => {
+  describe('when I enter a number less than 2 in the form', () => {
+    test('Then nothing should be displayed', () => {
       new Structure();
       new PrimeNumber();
-      fireEvent.keyUp(screen.getByTestId('js-input'), {target: {value: null}});
+      fireEvent.keyUp(screen.getByTestId('js-input'), {target: {value: 1}});
       expect(screen.getByTestId('input-null')).toBeTruthy;
     });
   });
   describe('When I enter a number greater than 1 in the form', () => {
-    test('Then a list of numbers is displayed', () => {
+    test('Then a list of numbers should be displayed', () => {
       new Structure();
       new PrimeNumber();
       fireEvent.keyUp(screen.getByTestId('js-input'), {target: {value: 200}});
