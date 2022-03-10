@@ -6229,6 +6229,90 @@ h2 {
   margin-left: 15px;
 }
 
+.modal-wrapping {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(211, 15, 15, 0.4);
+}
+
+.modal-content {
+  display: flex;
+}
+
+.modal-left {
+  width: 50vw;
+  height: 100vh;
+  background-color: burlywood;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.form {
+  width: 300px;
+  height: 250px;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+}
+.email #mail {
+  background-color: #0285b8;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.button {
+  background-color: #0285b8;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.remember label {
+  display: initial;
+}
+
+label {
+  display: block;
+}
+
+input {
+  margin: 0;
+}
+
+.log {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 25px;
+}
+
 .prime {
   width: fit-content;
   max-width: 1024px;
