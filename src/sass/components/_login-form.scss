@@ -2,108 +2,103 @@
 // * Login form stylesheet.
 // ----------------------------------------------------------------------------
 
-.modal-wrapping {
-  // a passer à none en JS
+.modal {
   // display: none;
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  // overflow: auto;
-  z-index: 2;
-  background: rgba(211, 15, 15, 0.4);
-}
 
-.modal-content {
-  display: flex;
-}
+  &-left {
+    width: 50vw;
+    height: 100vh;
+    background-color: #027cad;
 
-.modal-left {
-  width: 50vw;
-  height: 100vh;
-  background-color: burlywood;
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-.modal-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
-  height: 100vh;
-  // background: linear-gradient(to bottom, #ffffff, #f1f1f1);
-  background-color: #f1f1f1;
-}
-
-.form {
-  width: 300px;
-  height: 250px;
-  padding: 25px;
-  background-color: #fff;
-}
-
-.email {
-
-  display: flex;
-  flex-direction: column;
-  #mail {
-    background-color: #0285b8;
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
   }
-  
-  
+
+  &-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+    background-color: #f1f1f1;
+
+    .form {
+      width: 300px;
+      height: 240px;
+      padding: 25px;
+      box-shadow: 0 0 3px gray;
+      border-radius: 2px;
+      background-color: #fff;
+      color: #3c3a3a;
+
+      label {
+        display: block;
+      }
+
+      &-password {
+        margin-top: 17px;
+      }
+
+      &-email input,
+      &-password input {
+        width: 100%;
+        height: 35px;
+        margin-top: 5px;
+        box-shadow: 0 0 3px gray;
+        border: none;
+        border-radius: 2px;
+        background-color: #f1f1f1;
+      }
+
+      &-email input:focus,
+      &-password input:focus {
+        outline: 1px solid #027cad;
+      }
+
+      &-log {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 17px;
+
+        &__remember {
+          display: flex;
+          align-items: center;
+        }
+
+        &__remember label {
+          display: initial;
+          margin-left: 5px;
+        }
+
+        &__button {
+          padding: 5px;
+          border: none;
+          border-radius: 2px;
+          background-color: #027cad;
+          color: #fff;
+          cursor: pointer;
+          font-weight: 700;
+
+          &:hover {
+            background-color: darken($color: #027cad, $amount: 6);
+            transition: 80ms linear;
+          }
+        }
+      }
+    }
+  }
 }
-
-.password {
-
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
-}
-
-.button {
-  background-color: #0285b8;
-  color: #fff;
-  cursor: pointer;
-  border: none;
-  padding: 5px;
-  border-radius: 3px;
-}
-
-.remember label {
-
-  display: initial;
-}
-
-
-
-label {
-  display: block;
-
-}
-
-input {
-  // border: none;
-  margin: 0;
- 
-}
-
-
-.log {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 25px;
-}
-
-
-
 
 // * End
 // * ------------------------

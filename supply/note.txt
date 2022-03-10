@@ -4,7 +4,8 @@ Sand box :
 Ajouter à README :
 
 - faire une section sur live-server
-- pull et tags dans README
+- pull origin et tags dans README
+- git fetch origin
 
 => json-server --w data_base.json (a revoir pour travail avec fetch)
 

@@ -6195,6 +6195,10 @@ readers do not read off random characters that represent icons */
   width: 1px;
 }
 
+input[type=checkbox] {
+  margin: 0;
+}
+
 h1 {
   font-size: 30px;
   font-weight: 700;
@@ -6229,88 +6233,86 @@ h2 {
   margin-left: 15px;
 }
 
-.modal-wrapping {
+.modal {
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
-  background: rgba(211, 15, 15, 0.4);
 }
-
-.modal-content {
-  display: flex;
-}
-
 .modal-left {
   width: 50vw;
   height: 100vh;
-  background-color: burlywood;
+  background-color: #027cad;
 }
-
-.image {
+.modal-left__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.8;
 }
-
 .modal-right {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 50vw;
   height: 100vh;
   background-color: #f1f1f1;
 }
-
-.form {
+.modal-right .form {
   width: 300px;
-  height: 250px;
+  height: 240px;
   padding: 25px;
+  box-shadow: 0 0 3px gray;
+  border-radius: 2px;
   background-color: #fff;
+  color: #3c3a3a;
 }
-
-.email {
-  display: flex;
-  flex-direction: column;
-}
-.email #mail {
-  background-color: #0285b8;
-}
-
-.password {
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
-}
-
-.button {
-  background-color: #0285b8;
-  color: #fff;
-  cursor: pointer;
-  border: none;
-  padding: 5px;
-  border-radius: 3px;
-}
-
-.remember label {
-  display: initial;
-}
-
-label {
+.modal-right .form label {
   display: block;
 }
-
-input {
-  margin: 0;
+.modal-right .form-password {
+  margin-top: 17px;
 }
-
-.log {
+.modal-right .form-email input, .modal-right .form-password input {
+  width: 100%;
+  height: 35px;
+  margin-top: 5px;
+  box-shadow: 0 0 3px gray;
+  border: none;
+  border-radius: 2px;
+  background-color: #f1f1f1;
+}
+.modal-right .form-email input:focus, .modal-right .form-password input:focus {
+  outline: 1px solid #027cad;
+}
+.modal-right .form-log {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  margin-top: 25px;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+.modal-right .form-log__remember {
+  display: flex;
+  align-items: center;
+}
+.modal-right .form-log__remember label {
+  display: initial;
+  margin-left: 5px;
+}
+.modal-right .form-log__button {
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  background-color: #027cad;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+.modal-right .form-log__button:hover {
+  background-color: #02668f;
+  transition: 80ms linear;
 }
 
 .prime {

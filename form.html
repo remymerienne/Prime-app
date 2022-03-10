@@ -15,39 +15,35 @@
 
 <body>
 
-  <div class="modal-wrapping">
+  <div class="modal">
 
-    <div class="modal-content">
+    <div class="modal-left">
+      <img class="modal-left__image" src="./water.jpg" alt="">
+    </div>
 
-      <div class="modal-left">
-        <img class="image" src="./water.jpg" alt="">
-      </div>
+    <div class="modal-right">
 
-      <div class="modal-right">
+      <form class="form" novalidate>
+        
+        <div class="form-email">
+          <label for="mail">Username or Email Address</label>
+          <input id="mail">
+        </div>
 
-        <form class="form" novalidate>
+        <div class="form-password">
+          <label for="pass">Password</label>
+          <input id="pass">
+        </div>
 
-          <div class="email">
-            <label for="mail">Username or Email Address</label>
-            <input id="mail" type="email" required>
+        <div class="form-log">
+          <div class="form-log__remember">
+            <input type="checkbox" id="scale">
+            <label for="scale">Remember Me</label>
           </div>
+          <button class="form-log__button" type="button">Log in</button>
+        </div>
 
-          <div class="password">
-            <label for="pass">Password</label>
-            <input id="pass" type="password">
-          </div>
-
-          <div class="log">
-            <div class="remember">
-              <input type="checkbox" id="scale">
-              <label for="scale">Remember Me</label>
-            </div>
-            <button class="button" type="button" >Log in</button>
-          </div>
-
-        </form>
-
-      </div>
+      </form>
 
     </div>
 
