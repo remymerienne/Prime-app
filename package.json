@@ -10,7 +10,8 @@
     "test": "jest --watch --verbose",
     "test-cov": "jest --coverage",
     "server-src": "live-server --port=8080 --open=\"src/index.html\"",
-    "server-dist": "live-server --port=8080 --open=\"dist/index.html\""
+    "server-dist": "live-server --port=8080 --open=\"dist/index.html\"",
+    "server-form": "live-server --port=8080 --open=\"form.html\""
   },
   "repository": {
     "type": "git",
