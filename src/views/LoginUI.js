@@ -3,7 +3,7 @@ export default () => {
   return (`
     <div class="modal">
       <div class="modal-left">
-        <img class="modal-left__image" src="../src/images/water.jpg" alt="">
+        <img class="modal-left__image" src="../src/images/sky.svg" alt="">
       </div>
       <div class="modal-right">
         <i class="fa-solid fa-house-user"></i>

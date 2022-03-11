@@ -9380,7 +9380,7 @@ button {
 .modal-left {
   width: 50vw;
   height: 100vh;
-  background-color: #027cad;
+  background-color: #3062a6;
 }
 .modal-left__image {
   width: 100%;
@@ -9446,7 +9446,7 @@ button {
   color: #3c3a3a;
 }
 .modal-right .form-email input:focus, .modal-right .form-password input:focus {
-  outline: 1px solid #027cad;
+  outline: 1px solid #3062a6;
 }
 .modal-right .form-log {
   display: flex;
@@ -9469,13 +9469,13 @@ button {
   padding: 5px;
   border: none;
   border-radius: 2px;
-  background-color: #027cad;
+  background-color: #3062a6;
   color: white;
   cursor: pointer;
   font-weight: 700;
 }
 .modal-right .form-log__button:hover {
-  background-color: #02668f;
+  background-color: #29548e;
   transition: 80ms linear;
 }
 .modal-right .lost {
