@@ -4,7 +4,7 @@ export default class {
 
   constructor() {
     const main = document.querySelector('main.js-main');
-    main.innerHTML = primeNumberBlockUI();
+    main.innerHTML += primeNumberBlockUI();
     const elementListened = document.getElementById('prime-up-to');
     elementListened.addEventListener('keyup', e => {
         this.numberUpTo = e.target.value;
