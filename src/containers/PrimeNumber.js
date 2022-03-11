@@ -1,4 +1,4 @@
-import {primeNumberBlockUI, primeNumberListUI} from '../views/PrimeNumberUI.js';
+import {primeNumberBlockUI, primeNumberListUI} from '../views/PrimeNumberUI';
 
 export default class {
 

@@ -1,4 +1,4 @@
-import structureUI from '../views/StructureUI.js';
+import structureUI from '../views/StructureUI';
 
 export default class {
 
