@@ -2,6 +2,11 @@
 // * This file contains very basic layouts.
 // ----------------------------------------------------------------------------
 
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
 .container {
   display: flex;
   justify-content: center;

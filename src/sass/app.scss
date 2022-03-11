@@ -1,38 +1,13 @@
 @charset "UTF-8";
 
-// @import 
-// 'abstracts/variables',
-// 'abstracts/functions',
-// 'abstracts/mixins';
-
-@import //  'vendors/minireset';
-// 'vendors/normalize';
+@import
 'vendors/reset',
 'vendors/fontawesome';
 
-// @import 
-// 'extend/placeholders';
-
 @import 
-'base/base',
-// 'base/fonts',
-'base/typography';
+'base/base';
 
-
-//@import
-//  'animations/';
-
-@import // 'layout/header',
-// 'layout/footer',
+@import
 'components/structure',
 'components/login-form',
 'components/prime-number';
-
-//@import
-//  'components/';
-
-//@import
-//  'pages/';
-
-//@import
-//  'themes/';

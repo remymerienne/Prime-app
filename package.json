@@ -9,8 +9,8 @@
     "purge": "purgecss --css css/app.css --content dist/index.html dist/app.bundle.js -o dist -font",
     "test": "jest --watch --verbose",
     "test-cov": "jest --coverage",
-    "server-src": "live-server --port=8080 --open=\"src/index.html\"",
-    "server-dist": "live-server --port=8080 --open=\"dist/index.html\"",
+    "server-src": "live-server --port=5500 --open=\"src/index.html\"",
+    "server-dist": "live-server --port=5050 --open=\"dist/index.html\"",
     "server-form": "live-server --port=8080 --open=\"form.html\""
   },
   "repository": {

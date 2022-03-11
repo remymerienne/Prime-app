@@ -9326,11 +9326,6 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
-  font-size: 20px;
-  font-weight: 600;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -9355,6 +9350,25 @@ h2 {
   margin-left: 15px;
 }
 
+/* heebo-regular - latin */
+@font-face {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../src/fonts/heebo-v18-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../src/fonts/heebo-v18-latin-regular.eot?#iefix") format("embedded-opentype"), url("../src/fonts/heebo-v18-latin-regular.woff2") format("woff2"), url("../src/fonts/heebo-v18-latin-regular.woff") format("woff"), url("../src/fonts/heebo-v18-latin-regular.ttf") format("truetype"), url("../src/fonts/heebo-v18-latin-regular.svg#Heebo") format("svg");
+  /* Legacy iOS */
+}
+p,
+label,
+input,
+button {
+  font-family: "Heebo", sans-serif;
+  font-size: 13px;
+}
+
 .modal {
   position: fixed;
   display: flex;
@@ -9372,23 +9386,28 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
 }
 .modal-right {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 50vw;
   height: 100vh;
   background-color: #f1f1f1;
 }
+.modal-right .fa-house-user {
+  color: #862f5b;
+  font-size: 45px;
+}
 .modal-right .form {
   width: 300px;
   height: 240px;
+  margin-top: 25px;
   padding: 25px;
   box-shadow: 0 0 3px gray;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: white;
   color: #3c3a3a;
 }
 .modal-right .form label {
@@ -9402,6 +9421,7 @@ h2 {
   position: absolute;
   margin-left: 225px;
   margin-top: 32px;
+  color: #3c3a3a;
   font-size: 13px;
 }
 .modal-right .form-password .fa-eye {
@@ -9411,24 +9431,27 @@ h2 {
   position: absolute;
   margin-left: 225px;
   margin-top: 32px;
+  color: #3c3a3a;
   font-size: 13px;
 }
 .modal-right .form-email input, .modal-right .form-password input {
   width: 100%;
   height: 35px;
   margin-top: 5px;
+  padding-left: 5px;
   box-shadow: 0 0 3px gray;
   border: none;
   border-radius: 2px;
   background-color: #f1f1f1;
+  color: #3c3a3a;
 }
 .modal-right .form-email input:focus, .modal-right .form-password input:focus {
   outline: 1px solid #027cad;
 }
 .modal-right .form-log {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
   margin-top: 17px;
 }
 .modal-right .form-log__remember {
@@ -9447,13 +9470,28 @@ h2 {
   border: none;
   border-radius: 2px;
   background-color: #027cad;
-  color: #fff;
+  color: white;
   cursor: pointer;
   font-weight: 700;
 }
 .modal-right .form-log__button:hover {
   background-color: #02668f;
   transition: 80ms linear;
+}
+.modal-right .lost {
+  margin-left: 25px;
+  margin-top: 25px;
+  color: #3c3a3a;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h2,
+a {
+  font-family: "Heebo", sans-serif;
 }
 
 .prime {
@@ -9485,7 +9523,7 @@ h2 {
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
-  line-height: 24px;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=app.css.map */
