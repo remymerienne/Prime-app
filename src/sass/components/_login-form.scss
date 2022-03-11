@@ -47,6 +47,27 @@
 
       &-password {
         margin-top: 17px;
+
+        .fa-eye-slash,
+        .fa-eye {
+          position: absolute;
+          margin-left: 225px;
+          margin-top: 32px;
+          font-size: 13px;
+        }
+
+        .fa-eye {
+          display: none;
+        }
+      }
+
+      &-email {
+        .fa-envelope {
+          position: absolute;
+          margin-left: 225px;
+          margin-top: 32px;
+          font-size: 13px;
+        }
       }
 
       &-email input,
@@ -74,6 +95,10 @@
         &__remember {
           display: flex;
           align-items: center;
+
+          input[type="checkbox"] {
+            margin: 0;
+          }
         }
 
         &__remember label {
