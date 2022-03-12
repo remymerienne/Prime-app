@@ -9321,37 +9321,6 @@ readers do not read off random characters that represent icons */
   width: 1px;
 }
 
-h1 {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-.page {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1440px;
-  padding: 10px;
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.header-logo {
-  font-size: 25px;
-  margin-left: 15px;
-}
-
 /* heebo-regular - latin */
 @font-face {
   font-family: "Heebo";
@@ -9498,20 +9467,24 @@ button {
   color: #3c3a3a;
 }
 
-h2 {
+h1 {
   font-size: 20px;
   font-weight: 600;
 }
 
-h2,
+h1,
 a {
   font-family: "Heebo", sans-serif;
+}
+
+.main {
+  margin: 10px;
 }
 
 .prime {
   width: fit-content;
   max-width: 1024px;
-  margin: 20px auto 0 auto;
+  margin: 0 auto;
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;

@@ -1,14 +1,15 @@
-import Structure from '../containers/Structure';
-import Login from '../containers/Login';
-import PrimeNumber from '../containers/PrimeNumber';
+import LoginUI from '../views/LoginUI.js';
+import PrimeNumberUI from '../views/PrimeNumberUI.js';
+import PrimeNumber from '../containers/PrimeNumber.js';
 
-new Structure();
-new Login();
+const rootDiv = document.getElementById('root');
+rootDiv.innerHTML = LoginUI();
 
 const inputUser = document.getElementById('username');
 inputUser.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
     if (e.target.value === 'remy') {
+      rootDiv.innerHTML = PrimeNumberUI();
       new PrimeNumber();
     }
   }
