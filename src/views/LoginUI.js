@@ -12,7 +12,7 @@ export default () => {
             <div class="form-email">
               <i class="form-email-logo fa-solid fa-envelope"></i>
               <label for="mail">Username or Email Address</label>
-              <input class="form-email-input" id="mail">
+              <input class="form-email-input" id="username">
             </div>
             <div class="form-password">
               <i class="form-password-logo-open fa-solid fa-eye"></i>

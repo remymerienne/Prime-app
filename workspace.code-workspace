@@ -11,14 +11,14 @@
     "window.zoomLevel": 0,
 
     "restoreTerminals.terminals": [
-      {
-        "splitTerminals": [
-          {
-            "name": "sass",
-            "commands": ["npm run sass"]
-          }
-        ]
-      },
+      // {
+      //   "splitTerminals": [
+      //     {
+      //       "name": "sass",
+      //       "commands": ["npm run sass"]
+      //     }
+      //   ]
+      // },
       {  
         "splitTerminals": [
           {
