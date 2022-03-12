@@ -9338,14 +9338,16 @@ h1 {
   max-width: 1440px;
   padding: 10px;
 }
-.page-header {
+
+.header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
 }
-.page-header__logo {
+
+.header-logo {
   font-size: 25px;
   margin-left: 15px;
 }
@@ -9377,17 +9379,20 @@ button {
   width: 100%;
   height: 100%;
 }
-.modal-left {
+
+.left-side {
   width: 50vw;
   height: 100vh;
   background-color: #3062a6;
 }
-.modal-left__image {
+
+.left-side-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.modal-right {
+
+.right-side {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9396,11 +9401,13 @@ button {
   height: 100vh;
   background-color: #f1f1f1;
 }
-.modal-right .fa-house-user {
+
+.right-side-img {
   color: #862f5b;
   font-size: 45px;
 }
-.modal-right .form {
+
+.form {
   width: 300px;
   height: 240px;
   margin-top: 25px;
@@ -9410,31 +9417,30 @@ button {
   background-color: white;
   color: #3c3a3a;
 }
-.modal-right .form label {
+.form label {
   display: block;
 }
-.modal-right .form-password {
+
+.form-password {
   margin-top: 17px;
 }
-.modal-right .form-password .fa-eye-slash,
-.modal-right .form-password .fa-eye {
+
+.form-email-logo,
+.form-password-logo-open,
+.form-password-logo-close {
   position: absolute;
   margin-left: 225px;
-  margin-top: 32px;
+  margin-top: 30px;
   color: #3c3a3a;
   font-size: 13px;
 }
-.modal-right .form-password .fa-eye {
+
+.form-password-logo-open {
   display: none;
 }
-.modal-right .form-email .fa-envelope {
-  position: absolute;
-  margin-left: 225px;
-  margin-top: 32px;
-  color: #3c3a3a;
-  font-size: 13px;
-}
-.modal-right .form-email input, .modal-right .form-password input {
+
+.form-email-input,
+.form-password-input {
   width: 100%;
   height: 35px;
   margin-top: 5px;
@@ -9445,27 +9451,34 @@ button {
   background-color: #f1f1f1;
   color: #3c3a3a;
 }
-.modal-right .form-email input:focus, .modal-right .form-password input:focus {
+
+.form-email-input:focus,
+.form-password-input:focus {
   outline: 1px solid #3062a6;
 }
-.modal-right .form-log {
+
+.form-low-bloc {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 17px;
 }
-.modal-right .form-log__remember {
+
+.form-remember {
   display: flex;
   align-items: center;
 }
-.modal-right .form-log__remember input[type=checkbox] {
+
+.form-remember-input {
   margin: 0;
 }
-.modal-right .form-log__remember label {
+
+.form-remember-label {
   display: initial;
   margin-left: 5px;
 }
-.modal-right .form-log__button {
+
+.button-login {
   padding: 5px;
   border: none;
   border-radius: 2px;
@@ -9474,11 +9487,12 @@ button {
   cursor: pointer;
   font-weight: 700;
 }
-.modal-right .form-log__button:hover {
+.button-login:hover {
   background-color: #29548e;
   transition: 80ms linear;
 }
-.modal-right .lost {
+
+.lost-password {
   margin-left: 24px;
   margin-top: 25px;
   color: #3c3a3a;
@@ -9502,21 +9516,26 @@ a {
   border: 1px solid black;
   border-radius: 10px;
 }
+
 .prime-header {
   text-align: center;
 }
+
 .prime-form {
   margin-top: 10px;
   text-align: center;
 }
-.prime-form__input {
+
+.prime-form-input {
   margin-top: 10px;
 }
+
 .prime-info {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
+
 .prime-list {
   width: fit-content;
   margin: 10px auto 0 auto;

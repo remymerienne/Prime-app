@@ -7,7 +7,7 @@ export const primeNumberBlockUI = () => {
       </header>
       <form class="prime-form" novalidate>
         <label for="prime-up-to">Calculer les nombres premiers jusqu'à </label>
-        <input class="prime-form__input" id="prime-up-to" data-testid="js-input" type="number">
+        <input class="prime-form-input" id="prime-up-to" data-testid="js-input" type="number">
       </form>
       <div class="js-prime"></div>
     </section>

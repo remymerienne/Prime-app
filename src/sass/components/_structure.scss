@@ -18,19 +18,19 @@ h1 {
   width: 100%;
   max-width: 1440px;
   padding: 10px;
+}
 
-  &-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
 
-    &__logo {
-      font-size: 25px;
-      margin-left: 15px;
-    }
-  }
+.header-logo {
+  font-size: 25px;
+  margin-left: 15px;
 }
 
 // * End
