@@ -52,7 +52,6 @@ table {
   border-spacing: 0;
 }
 
-/* ************************************************* */
 /*!
  * Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -7315,7 +7314,6 @@ readers do not read off random characters that represent icons */
   content: "Z";
 }
 
-.sr-only,
 .fa-sr-only {
   position: absolute;
   width: 1px;
@@ -7328,7 +7326,6 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
-.sr-only-focusable:not(:focus),
 .fa-sr-only-focusable:not(:focus) {
   position: absolute;
   width: 1px;
@@ -9311,14 +9308,17 @@ readers do not read off random characters that represent icons */
 }
 
 .sr-only {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
 }
 
 /* heebo-regular - latin */

@@ -5494,7 +5494,6 @@ readers do not read off random characters that represent icons */
 .fa-z::before {
   content: "\5a"; }
 
-.sr-only,
 .fa-sr-only {
   position: absolute;
   width: 1px;
@@ -5506,7 +5505,6 @@ readers do not read off random characters that represent icons */
   white-space: nowrap;
   border-width: 0; }
 
-.sr-only-focusable:not(:focus),
 .fa-sr-only-focusable:not(:focus) {
   position: absolute;
   width: 1px;
