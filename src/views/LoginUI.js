@@ -19,10 +19,10 @@ export default () => {
                 <input class="form-email-input" id="username">
               </div>
               <div class="form-password">
-                <i class="form-password-logo-open fa-solid fa-eye"></i>
-                <i class="form-password-logo-close fa-solid fa-eye-slash"></i>
+                <i class="form-password-logo-close fa-solid fa-eye-slash js-eye"></i>
+                <i class="form-password-logo-open fa-solid fa-eye js-eye"></i>
                 <label for="pass">Password</label>
-                <input class="form-password-input" id="pass">
+                <input id="pass" class="form-password-input" type="password">
               </div>
               <div class="form-low-bloc">
                 <div class="form-remember">

@@ -8,7 +8,7 @@ export default () => {
         </header>
         <form class="prime-form" novalidate>
           <label for="prime-up-to">Calculer les nombres premiers jusqu'à </label>
-          <input class="prime-form-input" id="prime-up-to" data-testid="js-input" type="number">
+          <input id="prime-up-to" class="prime-form-input" type="number" data-testid="js-input">
         </form>
         <div class="js-prime"></div>
       </section>

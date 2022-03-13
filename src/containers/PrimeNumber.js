@@ -2,7 +2,8 @@ export default class {
 
   constructor() {
     const elementListened = document.getElementById('prime-up-to');
-    elementListened.addEventListener('keyup', e => {
+    elementListened.addEventListener('keydown', e => {
+      if (e.key === 'Enter') e.preventDefault();
       this.numberUpTo = e.target.value;
       this.displayPrimeNumberList();
     });
