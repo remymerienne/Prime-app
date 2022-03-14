@@ -2,9 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, object,
+html, body, div,
 h1, p,
-a, img, var, i, form, label, header, output, section {
+a, img, s, var, i, form, label, header, section {
   margin: 0;
   padding: 0;
   border: 0;
