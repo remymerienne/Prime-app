@@ -9,8 +9,8 @@ window.history.pushState({},
   window.location.origin + pathname
 );
 
-// let CurrentPath = '/Prime-app/dist/' + window.location.href.split('/').pop();
-let CurrentPath = '/src/' + window.location.href.split('/').pop();
+let CurrentPath = '/Prime-app/dist/' + window.location.href.split('/').pop();
+// let CurrentPath = '/src/' + window.location.href.split('/').pop();
 if (CurrentPath === ROUTES_PATH.Home) Home();
 
 // Soumission du password
@@ -22,8 +22,8 @@ button.addEventListener('click', () => {
       ROUTES_PATH.Calculate,
       window.location.origin + ROUTES_PATH.Calculate
     );
-    // CurrentPath = '/Prime-app/dist/' + window.location.href.split('/').pop();
-    CurrentPath = '/src/' + window.location.href.split('/').pop();
+    CurrentPath = '/Prime-app/dist/' + window.location.href.split('/').pop();
+    // CurrentPath = '/src/' + window.location.href.split('/').pop();
     if (CurrentPath === ROUTES_PATH.Calculate) Calculate();
   }
 });
