@@ -1,13 +1,8 @@
-import LoginUI from '../views/LoginUI.js';
-import PrimeNumberUI from '../views/PrimeNumberUI.js';
-import Login from '../containers/Login.js';
-import PrimeNumber from '../containers/PrimeNumber.js';
-
-const rootDiv = document.getElementById('root');
+import Calculate from '../pages/Calculate.js';
+import Home from '../pages/Home.js';
 
 // Gestion de la page de login
-rootDiv.innerHTML = LoginUI();
-new Login();
+Home();
 
 // Ecoute du clic et récupération de l'input
 const inputUser = document.getElementById('username');
@@ -16,8 +11,8 @@ button.addEventListener('click', () => {
     if (inputUser.value === 'remy') {
 
       // Gestion des nombres premiers
-      rootDiv.innerHTML = PrimeNumberUI();
-      new PrimeNumber();
+      Calculate();
 
     }
 });
+

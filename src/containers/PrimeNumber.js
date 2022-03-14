@@ -1,4 +1,4 @@
-export default class {
+class PrimeNumber {
 
   constructor() {
     const elementListened = document.getElementById('prime-up-to');
@@ -48,3 +48,5 @@ export default class {
   }
 
 }
+
+export default PrimeNumber;

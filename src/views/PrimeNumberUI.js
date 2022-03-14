@@ -1,4 +1,4 @@
-export default () => {
+const PrimeNumberUI = () => {
 
   return (`
     <main class="main">
@@ -16,3 +16,5 @@ export default () => {
   `);
 
 };
+
+export default PrimeNumberUI;

@@ -1,4 +1,4 @@
-export default () => {
+const LoginUI = () => {
 
   return (`
     <header>
@@ -40,3 +40,5 @@ export default () => {
   `);
 
 };
+
+export default LoginUI;

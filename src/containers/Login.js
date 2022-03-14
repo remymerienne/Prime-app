@@ -1,4 +1,4 @@
-export default class {
+class Login {
 
   constructor() {
     this.displayPassword();
@@ -27,3 +27,5 @@ export default class {
   }
 
 }
+
+export default Login;
