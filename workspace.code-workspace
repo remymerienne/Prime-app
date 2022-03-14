@@ -3,8 +3,11 @@
     {
       "name": "Prime-app",
       "path": "./"
+    },
+    {
+      "path": "../../../Dropbox/wSave/WORK/router"
     }
-],
+  ],
 
   "settings": {
 
@@ -42,7 +45,8 @@
           }
         ]
       }
-    ]
+    ],
+    "liveServer.settings.multiRootWorkspaceName": "Prime-app"
 
   }
 
