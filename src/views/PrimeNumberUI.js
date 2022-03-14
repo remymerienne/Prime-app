@@ -1,37 +1,20 @@
-export const primeNumberBlockUI = () => {
+const PrimeNumberUI = () => {
 
   return (`
-    <section class="prime">
-      <header class="prime-header">
-        <h2>Générateur de Nombres Premiers</h2>
-      </header>
-      <form class="prime-form" novalidate>
-        <label for="prime-up-to">Calculer les nombres premiers jusqu'à </label>
-        <input class="prime-form__input" id="prime-up-to" data-testid="js-input" type="number">
-      </form>
-      <div class="js-prime"></div>
-    </section>
+    <main class="main">
+      <section class="prime">
+        <header class="prime-header">
+          <h1>Générateur de Nombres Premiers</h1>
+        </header>
+        <form class="prime-form" novalidate>
+          <label for="prime-up-to">Calculer les nombres premiers jusqu'à </label>
+          <input id="prime-up-to" class="prime-form-input" type="number" data-testid="js-input">
+        </form>
+        <div class="js-prime"></div>
+      </section>
+    </main>
   `);
 
 };
 
-export const primeNumberListUI = (numberArray) => {
-
-  const getPrimeNumberRow = () => numberArray.map(e => e).join(' - ');
-  const getHowMany = () => numberArray.length.toLocaleString();
-
-  if (numberArray.length >= 1) {
-    return (`
-      <div class="prime-info">
-        <p>${getHowMany()} nombres trouvées</p>
-        <a href="../coverage/lcov-report/index.html" target="_blank">Test coverage</a>
-      </div>
-      <p class="prime-list" data-testid="input-valid">${getPrimeNumberRow()}</p>
-    `);
-  } else {
-    return (`
-      <div data-testid="input-null"></div>
-    `);
-  }
-
-};
+export default PrimeNumberUI;

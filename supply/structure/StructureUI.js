@@ -3,12 +3,11 @@ export default () => {
   return (`
     <div class="container">
       <div class="page">
-        <header class="page-header">
+        <header class="header">
           <h1>Hello world</h1>
-          <span class="page-header__logo fas fa-seedling"></span>
+          <i class="header-logo fas fa-seedling"></i>
         </header>
-        <main class="js-main">
-        </main>
+        <main class="js-main"></main>
       </div>
     </div>
   `);
