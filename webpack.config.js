@@ -6,7 +6,7 @@ module.exports = {
 
   watch: true,
 
-  entry: './src/app/app.js',
+  entry: './src/app/Router.js',
 
   output: {
     // eslint-disable-next-line no-undef
