@@ -2,11 +2,11 @@ const path = require('path');
 
 module.exports = {
 
-  mode: 'development',
+  mode: 'production',
 
   watch: true,
 
-  entry: './src/app/app.js',
+  entry: './src/app/Router.js',
 
   output: {
     // eslint-disable-next-line no-undef

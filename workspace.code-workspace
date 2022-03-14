@@ -4,11 +4,45 @@
       "name": "Prime-app",
       "path": "./"
     }
-],
+  ],
 
   "settings": {
 
     "window.zoomLevel": 0,
+
+    "restoreTerminals.terminals": [
+      // {
+      //   "splitTerminals": [
+      //     {
+      //       "name": "sass",
+      //       "commands": ["npm run sass"]
+      //     }
+      //   ]
+      // },
+      // {  
+      //   "splitTerminals": [
+      //     {
+      //       "name": "build",
+      //       "commands": ["npm run build"]
+      //     }
+      //   ]
+      // },
+      {
+        "splitTerminals": [
+          {
+            "name": "server",
+            "commands": ["npm run server-src"]
+          }
+        ]
+      },
+      {
+        "splitTerminals": [
+          {
+            "name": "GIT"
+          }
+        ]
+      }
+    ],
 
   }
 
