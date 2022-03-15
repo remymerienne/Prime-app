@@ -1,10 +1,11 @@
-class PrimeNumber {
+export default class {
 
   constructor() {
+    document.querySelector('body').innerHTML = this.getHtml();
     const elementListened = document.getElementById('prime-up-to');
     elementListened.addEventListener('keyup', e => {
       this.numberUpTo = e.target.value;
-      this.displayPrimeNumberList();
+      document.querySelector('div.js-prime').innerHTML = this.getListHtml();
     });
     elementListened.addEventListener('keydown', e => {
       if (e.key === 'Enter') e.preventDefault();
@@ -25,7 +26,24 @@ class PrimeNumber {
     return primeNumberArray;
   }
 
-  listUI = () => {
+  getHtml() {
+    return `
+      <main class="main">
+        <section class="prime">
+          <header class="prime-header">
+            <h1>Générateur de Nombres Premiers</h1>
+          </header>
+          <form class="prime-form" novalidate>
+            <label for="prime-up-to">Calculer les nombres premiers jusqu'à </label>
+            <input id="prime-up-to" class="prime-form-input" type="number" data-testid="js-input">
+          </form>
+          <div class="js-prime"></div>
+        </section>
+      </main>
+    `;
+  }
+
+  getListHtml = () => {
     const getPrimeNumberRow = () => this.getPrimeNumberArray().map(e => e).join(' - ');
     const getHowMany = () => this.getPrimeNumberArray().length.toLocaleString();
     if (this.getPrimeNumberArray().length >= 1) {
@@ -43,10 +61,4 @@ class PrimeNumber {
     }
   };
 
-  displayPrimeNumberList() {
-    document.querySelector('div.js-prime').innerHTML = this.listUI();
-  }
-
 }
-
-export default PrimeNumber;
