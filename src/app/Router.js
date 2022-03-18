@@ -24,6 +24,6 @@ button.addEventListener('click', () => {
     );
     // CurrentPath = '/Prime-app/dist/' + window.location.href.split('/').pop();
     CurrentPath = '/src/' + window.location.href.split('/').pop();
-    if (CurrentPath === ROUTES_PATH.Prime) new PrimeNumber();
+    if (CurrentPath === ROUTES_PATH.Prime) PrimeNumber();
   }
 });
