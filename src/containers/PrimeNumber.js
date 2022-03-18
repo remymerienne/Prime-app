@@ -10,11 +10,10 @@ export default () => {
   const elementListened = document.getElementById('prime-up-to');
   elementListened.addEventListener('keyup', e => {
 
-    let myList = PrimeNumberListUI(getPrimeNumberArray(e.target.value));
-
+    const myList = PrimeNumberListUI(getPrimeNumberArray(e.target.value));
     const target = document.getElementById('js-prime');
     target.innerHTML = myList;
-
+    
   });
 
   elementListened.addEventListener('keydown', e => {
