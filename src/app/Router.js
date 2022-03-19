@@ -11,7 +11,10 @@ window.history.pushState({},
 
 // let CurrentPath = '/Prime-app/dist/' + window.location.href.split('/').pop();
 let CurrentPath = '/src/' + window.location.href.split('/').pop();
-if (CurrentPath === ROUTES_PATH.Home) new Login();
+if (CurrentPath === ROUTES_PATH.Home) {
+  const myLogin = new Login();
+  myLogin.getHTML();
+}
 
 // Soumission du password
 const inputUser = document.getElementById('username');
@@ -25,8 +28,8 @@ button.addEventListener('click', () => {
     // CurrentPath = '/Prime-app/dist/' + window.location.href.split('/').pop();
     CurrentPath = '/src/' + window.location.href.split('/').pop();
     if (CurrentPath === ROUTES_PATH.Prime) {
-       const myList = new PrimeNumber();
-       myList.getHtml();
+      const myList = new PrimeNumber();
+      myList.getHtml();
     }
   }
 });
