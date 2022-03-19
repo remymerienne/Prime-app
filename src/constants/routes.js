@@ -1,13 +1,10 @@
-// const ROUTES_PATH = {
-//   Home: '/src/index.html',
-//   Calculate: '/src/index.html#calculate'
-// };
-
-// export default ROUTES_PATH;
-
-const ROUTES_PATH = {
-  Home: '/Prime-app/dist/index.html',
-  Calculate: '/Prime-app/dist/index.html#calculate'
+export default {
+  Home: '/src/index.html',
+  Prime: '/src/index.html#prime-calculator'
 };
 
-export default ROUTES_PATH;
+
+// export default {
+//   Home: '/Prime-app/dist/index.html',
+//   Prime: '/Prime-app/dist/index.html#prime-calculator'
+// };
