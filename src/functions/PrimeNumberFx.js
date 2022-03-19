@@ -1,6 +1,6 @@
 export const isPrimeNumber = (number) => {
 
-  if(number < 2 || isNaN(number)) return false;
+  if (number < 2 || isNaN(number)) return false;
 
   for (let i = 2; i <= Math.sqrt(number); i++) {
     if (number % i === 0) return false;
@@ -19,5 +19,5 @@ export const getPrimeNumberArray = (numberUpTo) => {
   }
 
   return primeNumberArray;
-  
+
 };

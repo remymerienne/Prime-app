@@ -1,1 +1,429 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><title>Prime-app</title><meta name="description" content="Hello world"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="../src/images/favicon.ico"><style>html,body,div,h1,p,a,img,s,var,i,form,label,header,section{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}header,section{display:block}body{line-height:1}.fa-solid{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto}.fa-envelope::before{content:"\f0e0"}.fa-eye::before{content:"\f06e"}.fa-eye-slash::before{content:"\f070"}.fa-house-user::before{content:"\e1b0"}:root{--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands"}:root{--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:400;font-display:block;src:url("../src/fonts/fontawesome/fa-regular-400.woff2") format("woff2"),url("../src/fonts/fontawesome/fa-regular-400.ttf") format("truetype")}:root{--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:block;src:url("../src/fonts/fontawesome/fa-solid-900.woff2") format("woff2"),url("../src/fonts/fontawesome/fa-solid-900.ttf") format("truetype")}.fa-solid{font-family:"Font Awesome 6 Free";font-weight:900}*,*::before,*::after{box-sizing:border-box}.sr-only{border:0!important;clip:rect(1px,1px,1px,1px)!important;-webkit-clip-path:inset(50%)!important;clip-path:inset(50%)!important;height:1px!important;margin:-1px!important;overflow:hidden!important;padding:0!important;position:absolute!important;width:1px!important;white-space:nowrap!important}@font-face{font-family:"Heebo";font-style:normal;font-weight:400;font-display:swap;src:url("../src/fonts/heebo-v18-latin-regular.eot");src:local(""),url("../src/fonts/heebo-v18-latin-regular.eot?#iefix") format("embedded-opentype"),url("../src/fonts/heebo-v18-latin-regular.woff2") format("woff2"),url("../src/fonts/heebo-v18-latin-regular.woff") format("woff"),url("../src/fonts/heebo-v18-latin-regular.ttf") format("truetype"),url("../src/fonts/heebo-v18-latin-regular.svg#Heebo") format("svg")}p,label,input,button{font-family:"Heebo",sans-serif;font-size:13px}.modal{position:fixed;display:flex;top:0;left:0;width:100%;height:100%}.left-side{width:50vw;height:100vh;background-color:#3062a6}.left-side-img{width:100%;height:100%;object-fit:cover}.right-side{display:flex;flex-direction:column;justify-content:center;align-items:center;width:50vw;height:100vh;background-color:#f1f1f1}.right-side-img{color:#862f5b;font-size:45px}.form{width:300px;height:240px;margin-top:25px;padding:25px;box-shadow:0 0 3px gray;border-radius:2px;background-color:white;color:#3c3a3a}.form label{display:block}.form-password{margin-top:17px}.form-email-logo,.form-password-logo-open,.form-password-logo-close{position:absolute;margin-left:225px;margin-top:30px;color:#3c3a3a;font-size:13px}.form-password-logo-open{display:none}.form-email-input,.form-password-input{width:100%;height:35px;margin-top:5px;padding-left:5px;box-shadow:0 0 3px gray;border:none;border-radius:2px;background-color:#f1f1f1;color:#3c3a3a}.form-email-input:focus,.form-password-input:focus{outline:1px solid #3062a6}.form-low-bloc{display:flex;justify-content:space-between;align-items:flex-start;margin-top:17px}.form-remember{display:flex;align-items:center}.form-remember-input{margin:0}.form-remember-label{display:initial;margin-left:5px}.button-login{padding:5px;border:none;border-radius:2px;background-color:#3062a6;color:white;cursor:pointer;font-weight:700}.button-login:hover{background-color:#29548e;transition:80ms linear}.lost-password{margin-left:24px;margin-top:25px;color:#3c3a3a}h1{font-size:20px;font-weight:600}h1,a{font-family:"Heebo",sans-serif}.main{margin:10px}.prime{width:fit-content;max-width:1024px;margin:0 auto;padding:10px;border:1px solid black;border-radius:10px}.prime-header{text-align:center}.prime-form{margin-top:10px;text-align:center}.prime-form-input{margin-top:10px}.prime-info{display:flex;justify-content:space-between;margin-top:20px}.prime-list{width:fit-content;margin:10px auto 0 auto;padding:10px;border:1px solid black;border-radius:10px;line-height:20px}</style></head><body><div id="root"></div><script>(()=>{'use strict';const e=document.getElementById('root');function n(e,n){for(var t=0;t<n.length;t++){var r=n[t];r.enumerable=r.enumerable||!1,r.configurable=!0,'value'in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}const t=function(){function e(){var n,t,r=this;!function(e,n){if(!(e instanceof n))throw new TypeError('Cannot call a class as a function')}(this,e),t=function(){return r.getPrimeNumberArray().length>=1?'\n <div class="prime-info">\n <p>'.concat(r.getPrimeNumberArray().length.toLocaleString(),' nombres trouvées</p>\n <a href="../coverage/lcov-report/index.html" target="_blank">Test coverage</a>\n </div>\n <p class="prime-list" data-testid="input-valid">').concat(r.getPrimeNumberArray().map((function(e){return e})).join(' - '),'</p>\n '):'\n <div data-testid="input-null"></div>\n '},(n='listUI')in this?Object.defineProperty(this,n,{value:t,enumerable:!0,configurable:!0,writable:!0}):this[n]=t;var i=document.getElementById('prime-up-to');i.addEventListener('keyup',(function(e){r.numberUpTo=e.target.value,r.displayPrimeNumberList()})),i.addEventListener('keydown',(function(e){'Enter'===e.key&&e.preventDefault()}))}var t,r;return t=e,(r=[{key:'getPrimeNumberArray',value:function(){for(var e=function(e){for(var n=2;n<=Math.sqrt(e);n++)if(e%n==0)return!1;return!0},n=[],t=2;t<=this.numberUpTo;t++)e(t)&&n.push(t);return n}},{key:'displayPrimeNumberList',value:function(){document.querySelector('div.js-prime').innerHTML=this.listUI()}}])&&n(t.prototype,r),Object.defineProperty(t,'prototype',{writable:!1}),e}();function r(e,n){for(var t=0;t<n.length;t++){var r=n[t];r.enumerable=r.enumerable||!1,r.configurable=!0,'value'in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}const i=function(){function e(){!function(e,n){if(!(e instanceof n))throw new TypeError('Cannot call a class as a function')}(this,e),this.displayPassword()}var n,t;return n=e,(t=[{key:'displayPassword',value:function(){var e=document.querySelector('i.form-password-logo-close'),n=document.querySelector('i.form-password-logo-open'),t=document.querySelectorAll('i.js-eye'),r=document.getElementById('pass'),i=0;t.forEach((function(t){t.addEventListener('click',(function(){i%2==0?(r.setAttribute('type','text'),e.style.display='none',n.style.display='initial'):(r.setAttribute('type','password'),e.style.display='initial',n.style.display='none'),i++}))}))}}])&&r(n.prototype,t),Object.defineProperty(n,'prototype',{writable:!1}),e}(),s='/Prime-app/dist/index.html',a='/Prime-app/dist/index.html#calculate';var o=window.location.pathname;window.history.pushState({},o,window.location.origin+o);var l='/Prime-app/dist/'+window.location.href.split('/').pop();l===s&&(e.innerHTML='\n <header>\n <h1 class="sr-only">Nombre premier</h1>\n </header>\n <main>\n <div class="modal">\n <div class="left-side">\n <img class="left-side-img" src="../src/images/sky.svg" alt="">\n </div>\n <div class="right-side">\n <i class="right-side-img fa-solid fa-house-user"></i>\n <div class="layout-html-only">\n <form class="form" novalidate>\n <div class="form-email">\n <i class="form-email-logo fa-solid fa-envelope"></i>\n <label for="username">Username or Email Address</label>\n <input class="form-email-input" id="username">\n </div>\n <div class="form-password">\n <i class="form-password-logo-close fa-solid fa-eye-slash js-eye"></i>\n <i class="form-password-logo-open fa-solid fa-eye js-eye"></i>\n <label for="pass">Password</label>\n <input id="pass" class="form-password-input" type="password">\n </div>\n <div class="form-low-bloc">\n <div class="form-remember">\n <input class="form-remember-input" type="checkbox" id="scale">\n <label class="form-remember-label" for="scale">Remember Me</label>\n </div>\n <button class="button-login" type="button">Log in</button>\n </div>\n </form>\n <p class="lost-password">Lost your password?</p>\n </div>\n </div>\n </div>\n </main>\n ',new i);var d=document.getElementById('username');document.querySelector('button.button-login').addEventListener('click',(function(){'remy'===d.value&&(window.history.pushState({},a,window.location.origin+a),(l='/Prime-app/dist/'+window.location.href.split('/').pop())===a&&(e.innerHTML='\n <main class="main">\n <section class="prime">\n <header class="prime-header">\n <h1>Générateur de Nombres Premiers</h1>\n </header>\n <form class="prime-form" novalidate>\n <label for="prime-up-to">Calculer les nombres premiers jusqu\'à </label>\n <input id="prime-up-to" class="prime-form-input" type="number" data-testid="js-input">\n </form>\n <div class="js-prime"></div>\n </section>\n </main>\n ',new t))}))})();</script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Prime-app</title>
+        <meta name="description" content="Hello world">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../src/images/favicon.ico">
+        <style>
+            html,body,div,h1,p,a,img,s,var,i,form,label,header,section {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline
+            }
+
+            header,section {
+                display: block
+            }
+
+            body {
+                line-height: 1
+            }
+
+            .fa-solid {
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                display: var(--fa-display,inline-block);
+                font-style: normal;
+                font-variant: normal;
+                line-height: 1;
+                text-rendering: auto
+            }
+
+            .fa-envelope::before {
+                content: "\f0e0"
+            }
+
+            .fa-eye::before {
+                content: "\f06e"
+            }
+
+            .fa-eye-slash::before {
+                content: "\f070"
+            }
+
+            .fa-house-user::before {
+                content: "\e1b0"
+            }
+
+            :root {
+                --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands"
+            }
+
+            :root {
+                --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free"
+            }
+
+            @font-face {
+                font-family: "Font Awesome 6 Free";
+                font-style: normal;
+                font-weight: 400;
+                font-display: block;
+                src: url("../src/fonts/fontawesome/fa-regular-400.woff2") format("woff2"),url("../src/fonts/fontawesome/fa-regular-400.ttf") format("truetype")
+            }
+
+            :root {
+                --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free"
+            }
+
+            @font-face {
+                font-family: "Font Awesome 6 Free";
+                font-style: normal;
+                font-weight: 900;
+                font-display: block;
+                src: url("../src/fonts/fontawesome/fa-solid-900.woff2") format("woff2"),url("../src/fonts/fontawesome/fa-solid-900.ttf") format("truetype")
+            }
+
+            .fa-solid {
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900
+            }
+
+            *,*::before,*::after {
+                box-sizing: border-box
+            }
+
+            .sr-only {
+                border: 0!important;
+                clip: rect(1px,1px,1px,1px)!important;
+                -webkit-clip-path: inset(50%)!important;
+                clip-path: inset(50%)!important;
+                height: 1px!important;
+                margin: -1px!important;
+                overflow: hidden!important;
+                padding: 0!important;
+                position: absolute!important;
+                width: 1px!important;
+                white-space: nowrap!important
+            }
+
+            @font-face {
+                font-family: "Heebo";
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url("../src/fonts/heebo-v18-latin-regular.eot");
+                src: local(""),url("../src/fonts/heebo-v18-latin-regular.eot?#iefix") format("embedded-opentype"),url("../src/fonts/heebo-v18-latin-regular.woff2") format("woff2"),url("../src/fonts/heebo-v18-latin-regular.woff") format("woff"),url("../src/fonts/heebo-v18-latin-regular.ttf") format("truetype"),url("../src/fonts/heebo-v18-latin-regular.svg#Heebo") format("svg")
+            }
+
+            p,label,input,button {
+                font-family: "Heebo",sans-serif;
+                font-size: 13px
+            }
+
+            .modal {
+                position: fixed;
+                display: flex;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%
+            }
+
+            .left-side {
+                width: 50vw;
+                height: 100vh;
+                background-color: #3062a6
+            }
+
+            .left-side-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover
+            }
+
+            .right-side {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50vw;
+                height: 100vh;
+                background-color: #f1f1f1
+            }
+
+            .right-side-img {
+                color: #862f5b;
+                font-size: 45px
+            }
+
+            .form {
+                width: 300px;
+                height: 240px;
+                margin-top: 25px;
+                padding: 25px;
+                box-shadow: 0 0 3px gray;
+                border-radius: 2px;
+                background-color: white;
+                color: #3c3a3a
+            }
+
+            .form label {
+                display: block
+            }
+
+            .form-password {
+                margin-top: 17px
+            }
+
+            .form-email-logo,.form-password-logo-open,.form-password-logo-close {
+                position: absolute;
+                margin-left: 225px;
+                margin-top: 30px;
+                color: #3c3a3a;
+                font-size: 13px
+            }
+
+            .form-password-logo-open {
+                display: none
+            }
+
+            .form-email-input,.form-password-input {
+                width: 100%;
+                height: 35px;
+                margin-top: 5px;
+                padding-left: 5px;
+                box-shadow: 0 0 3px gray;
+                border: none;
+                border-radius: 2px;
+                background-color: #f1f1f1;
+                color: #3c3a3a
+            }
+
+            .form-email-input:focus,.form-password-input:focus {
+                outline: 1px solid #3062a6
+            }
+
+            .form-low-bloc {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-top: 17px
+            }
+
+            .form-remember {
+                display: flex;
+                align-items: center
+            }
+
+            .form-remember-input {
+                margin: 0
+            }
+
+            .form-remember-label {
+                display: initial;
+                margin-left: 5px
+            }
+
+            .button-login {
+                padding: 5px;
+                border: none;
+                border-radius: 2px;
+                background-color: #3062a6;
+                color: white;
+                cursor: pointer;
+                font-weight: 700
+            }
+
+            .button-login:hover {
+                background-color: #29548e;
+                transition: 80ms linear
+            }
+
+            .lost-password {
+                margin-left: 24px;
+                margin-top: 25px;
+                color: #3c3a3a
+            }
+
+            h1 {
+                font-size: 20px;
+                font-weight: 600
+            }
+
+            h1,a {
+                font-family: "Heebo",sans-serif
+            }
+
+            .main {
+                margin: 10px
+            }
+
+            .prime {
+                width: fit-content;
+                max-width: 1024px;
+                margin: 0 auto;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 10px
+            }
+
+            .prime-header {
+                text-align: center
+            }
+
+            .prime-form {
+                margin-top: 10px;
+                text-align: center
+            }
+
+            .prime-form-input {
+                margin-top: 10px
+            }
+
+            .prime-info {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px
+            }
+
+            .prime-list {
+                width: fit-content;
+                margin: 10px auto 0 auto;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 10px;
+                line-height: 20px
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+            (()=>{
+                'use strict';
+                const e = document.getElementById('root');
+                function n(e, n) {
+                    for (var t = 0; t < n.length; t++) {
+                        var r = n[t];
+                        r.enumerable = r.enumerable || !1,
+                        r.configurable = !0,
+                        'value'in r && (r.writable = !0),
+                        Object.defineProperty(e, r.key, r)
+                    }
+                }
+                const t = function() {
+                    function e() {
+                        var n, t, r = this;
+                        !function(e, n) {
+                            if (!(e instanceof n))
+                                throw new TypeError('Cannot call a class as a function')
+                        }(this, e),
+                        t = function() {
+                            return r.getPrimeNumberArray().length >= 1 ? '\n <div class="prime-info">\n <p>'.concat(r.getPrimeNumberArray().length.toLocaleString(), ' nombres trouvées</p>\n <a href="../coverage/lcov-report/index.html" target="_blank">Test coverage</a>\n </div>\n <p class="prime-list" data-testid="input-valid">').concat(r.getPrimeNumberArray().map((function(e) {
+                                return e
+                            }
+                            )).join(' - '), '</p>\n ') : '\n <div data-testid="input-null"></div>\n '
+                        }
+                        ,
+                        (n = 'listUI')in this ? Object.defineProperty(this, n, {
+                            value: t,
+                            enumerable: !0,
+                            configurable: !0,
+                            writable: !0
+                        }) : this[n] = t;
+                        var i = document.getElementById('prime-up-to');
+                        i.addEventListener('keyup', (function(e) {
+                            r.numberUpTo = e.target.value,
+                            r.displayPrimeNumberList()
+                        }
+                        )),
+                        i.addEventListener('keydown', (function(e) {
+                            'Enter' === e.key && e.preventDefault()
+                        }
+                        ))
+                    }
+                    var t, r;
+                    return t = e,
+                    (r = [{
+                        key: 'getPrimeNumberArray',
+                        value: function() {
+                            for (var e = function(e) {
+                                for (var n = 2; n <= Math.sqrt(e); n++)
+                                    if (e % n == 0)
+                                        return !1;
+                                return !0
+                            }, n = [], t = 2; t <= this.numberUpTo; t++)
+                                e(t) && n.push(t);
+                            return n
+                        }
+                    }, {
+                        key: 'displayPrimeNumberList',
+                        value: function() {
+                            document.querySelector('div.js-prime').innerHTML = this.listUI()
+                        }
+                    }]) && n(t.prototype, r),
+                    Object.defineProperty(t, 'prototype', {
+                        writable: !1
+                    }),
+                    e
+                }();
+                function r(e, n) {
+                    for (var t = 0; t < n.length; t++) {
+                        var r = n[t];
+                        r.enumerable = r.enumerable || !1,
+                        r.configurable = !0,
+                        'value'in r && (r.writable = !0),
+                        Object.defineProperty(e, r.key, r)
+                    }
+                }
+                const i = function() {
+                    function e() {
+                        !function(e, n) {
+                            if (!(e instanceof n))
+                                throw new TypeError('Cannot call a class as a function')
+                        }(this, e),
+                        this.displayPassword()
+                    }
+                    var n, t;
+                    return n = e,
+                    (t = [{
+                        key: 'displayPassword',
+                        value: function() {
+                            var e = document.querySelector('i.form-password-logo-close')
+                              , n = document.querySelector('i.form-password-logo-open')
+                              , t = document.querySelectorAll('i.js-eye')
+                              , r = document.getElementById('pass')
+                              , i = 0;
+                            t.forEach((function(t) {
+                                t.addEventListener('click', (function() {
+                                    i % 2 == 0 ? (r.setAttribute('type', 'text'),
+                                    e.style.display = 'none',
+                                    n.style.display = 'initial') : (r.setAttribute('type', 'password'),
+                                    e.style.display = 'initial',
+                                    n.style.display = 'none'),
+                                    i++
+                                }
+                                ))
+                            }
+                            ))
+                        }
+                    }]) && r(n.prototype, t),
+                    Object.defineProperty(n, 'prototype', {
+                        writable: !1
+                    }),
+                    e
+                }()
+                  , s = '/Prime-app/dist/index.html'
+                  , a = '/Prime-app/dist/index.html#calculate';
+                var o = window.location.pathname;
+                window.history.pushState({}, o, window.location.origin + o);
+                var l = '/Prime-app/dist/' + window.location.href.split('/').pop();
+                l === s && (e.innerHTML = '\n <header>\n <h1 class="sr-only">Nombre premier</h1>\n </header>\n <main>\n <div class="modal">\n <div class="left-side">\n <img class="left-side-img" src="../src/images/sky.svg" alt="">\n </div>\n <div class="right-side">\n <i class="right-side-img fa-solid fa-house-user"></i>\n <div class="layout-html-only">\n <form class="form" novalidate>\n <div class="form-email">\n <i class="form-email-logo fa-solid fa-envelope"></i>\n <label for="username">Username or Email Address</label>\n <input class="form-email-input" id="username">\n </div>\n <div class="form-password">\n <i class="form-password-logo-close fa-solid fa-eye-slash js-eye"></i>\n <i class="form-password-logo-open fa-solid fa-eye js-eye"></i>\n <label for="pass">Password</label>\n <input id="pass" class="form-password-input" type="password">\n </div>\n <div class="form-low-bloc">\n <div class="form-remember">\n <input class="form-remember-input" type="checkbox" id="scale">\n <label class="form-remember-label" for="scale">Remember Me</label>\n </div>\n <button class="button-login" type="button">Log in</button>\n </div>\n </form>\n <p class="lost-password">Lost your password?</p>\n </div>\n </div>\n </div>\n </main>\n ',
+                new i);
+                var d = document.getElementById('username');
+                document.querySelector('button.button-login').addEventListener('click', (function() {
+                    'remy' === d.value && (window.history.pushState({}, a, window.location.origin + a),
+                    (l = '/Prime-app/dist/' + window.location.href.split('/').pop()) === a && (e.innerHTML = '\n <main class="main">\n <section class="prime">\n <header class="prime-header">\n <h1>Générateur de Nombres Premiers</h1>\n </header>\n <form class="prime-form" novalidate>\n <label for="prime-up-to">Calculer les nombres premiers jusqu\'à </label>\n <input id="prime-up-to" class="prime-form-input" type="number" data-testid="js-input">\n </form>\n <div class="js-prime"></div>\n </section>\n </main>\n ',
+                    new t))
+                }
+                ))
+            }
+            )();
+        </script>
+    </body>
+</html>
