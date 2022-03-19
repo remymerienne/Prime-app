@@ -6,6 +6,7 @@ Ajouter à README :
 - faire une section sur live-server
 - pull origin et tags dans README
 - git fetch origin
+- git fetch --prune => supprimer le visuel des branches déjà supprimée
 
 => json-server --w data_base.json (a revoir pour travail avec fetch)
 
