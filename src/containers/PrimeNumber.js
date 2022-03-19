@@ -2,22 +2,36 @@ import PrimeNumberUI from '../views/PrimeNumberUI.js';
 import PrimeNumberListUI from '../views/PrimeNumberListUI.js';
 import { getPrimeNumberArray } from '../functions/PrimeNumberFx.js';
 
-export default () => {
+export default class {
 
-  const body = document.querySelector('body');
-  body.innerHTML = PrimeNumberUI();
+  constructor() {
+    document.title = 'Nombres premiers';
+  }
 
-  const elementListened = document.getElementById('prime-up-to');
-  elementListened.addEventListener('keyup', e => {
+  async getHtml() {
 
-    const myList = PrimeNumberListUI(getPrimeNumberArray(e.target.value));
-    const target = document.getElementById('js-prime');
-    target.innerHTML = myList;
-    
-  });
+    // injection de la base html dans le 'body'
+    const root = document.querySelector('body');
+    root.innerHTML = PrimeNumberUI();
 
-  elementListened.addEventListener('keydown', e => {
-    if (e.key === 'Enter') e.preventDefault();
-  });
+    // écoute de l'entrée utilisateur
+    const elementListened = document.getElementById('prime-up-to');
+    elementListened.addEventListener('keyup', e => {
 
-};
+      // création de la liste de nombre premier
+      const myList = PrimeNumberListUI(getPrimeNumberArray(e.target.value));
+
+      // injection de la liste générée dans la base html
+      const target = document.getElementById('js-prime');
+      target.innerHTML = myList;
+
+    });
+
+    // empèche le rechargement de la page si press enter dans input
+    elementListened.addEventListener('keydown', e => {
+      if (e.key === 'Enter') e.preventDefault();
+    });
+
+  }
+
+}
