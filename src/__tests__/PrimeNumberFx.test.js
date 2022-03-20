@@ -1,4 +1,4 @@
-import { isPrimeNumber, getPrimeNumberArray } from '../functions/PrimeNumberFX.js';
+import { isPrimeNumber, getPrimeNumberArray } from '../functions/prime-number/primeNumberFX.js';
 import primeNumberArray from '../__mocks__/primeNumberArray.js';
 
 describe('isPrimeNumber() Unit Test Suites', () => {

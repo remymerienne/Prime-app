@@ -1,6 +1,6 @@
 import PrimeNumberUI from '../views/PrimeNumberUI.js';
 import PrimeNumberListUI from '../views/PrimeNumberListUI.js';
-import { getPrimeNumberArray } from '../functions/prime-number/PrimeNumberFX.js';
+import { getPrimeNumberArray } from '../functions/prime-number/primeNumberFX.js';
 
 export default class {
 
