@@ -1,5 +1,6 @@
 import LoginUI from '../views/LoginUI.js';
-import { setPasswordVisibility } from '../functions/LoginFx.js';
+import { setPasswordVisibility } from '../functions/login/SetPasswordVisibilityFX.js';
+import { checkPassword } from '../functions/login/CheckPasswordFX.js';
 
 export default class {
 
@@ -15,6 +16,9 @@ export default class {
 
     // écoute si affichage du password
     setPasswordVisibility();
+
+    // accès au site i password correct
+    checkPassword();
     
   }
 

@@ -22,13 +22,13 @@ export const setPasswordVisibility = () => {
         inputPassword.setAttribute('type', 'password');
         closeEye.style.display = 'initial';
         openEye.style.display = 'none';
-        
+
       }
 
       counter++;
 
     });
-    
+
   });
 
 };

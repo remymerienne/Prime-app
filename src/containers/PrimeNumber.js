@@ -1,6 +1,6 @@
 import PrimeNumberUI from '../views/PrimeNumberUI.js';
 import PrimeNumberListUI from '../views/PrimeNumberListUI.js';
-import { getPrimeNumberArray } from '../functions/PrimeNumberFx.js';
+import { getPrimeNumberArray } from '../functions/prime-number/PrimeNumberFX.js';
 
 export default class {
 
@@ -8,7 +8,7 @@ export default class {
     document.title = 'Nombres premiers';
   }
 
-  async getHtml() {
+  async getHTML() {
 
     // injection de la base html dans le 'body'
     const root = document.querySelector('body');
