@@ -8,6 +8,7 @@ export const setPasswordVisibility = () => {
   let counter = 0;
 
   allEye.forEach(element => {
+
     element.addEventListener('click', () => {
 
       if (counter % 2 === 0) {
@@ -21,12 +22,13 @@ export const setPasswordVisibility = () => {
         inputPassword.setAttribute('type', 'password');
         closeEye.style.display = 'initial';
         openEye.style.display = 'none';
-        
+
       }
 
       counter++;
 
     });
+
   });
 
 };
