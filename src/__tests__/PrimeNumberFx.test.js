@@ -1,5 +1,4 @@
 import { isPrimeNumber, getPrimeNumberArray } from '../functions/prime-number/primeNumberFX.js';
-import primeNumberArray from '../__mocks__/primeNumberArray.js';
 
 describe('isPrimeNumber() Unit Test Suites', () => {
 
@@ -23,8 +22,12 @@ describe('isPrimeNumber() Unit Test Suites', () => {
 
 describe('getPrimeNumberArray() Unit Test Suites', () => {
 
-  test('The number 200 should return the expected list', () => {
-    expect(getPrimeNumberArray(200)).toEqual(primeNumberArray);
+  test('The number 20 should return an array whith only the prime numbers between 2 and 20', () => {
+    expect(getPrimeNumberArray(20)).toEqual([2,3,5,7,11,13,17,19]);
+  });
+
+  test('No argument should return an empty array', () => {
+    expect(getPrimeNumberArray()).toEqual([]);
   });
   
 });
