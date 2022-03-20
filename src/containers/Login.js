@@ -1,6 +1,6 @@
 import LoginUI from '../views/LoginUI.js';
-import { setPasswordVisibility } from '../functions/login/SetPasswordVisibilityFX.js';
-import { checkPassword } from '../functions/login/CheckPasswordFX.js';
+import { setPasswordVisibility } from '../functions/login/passwordVisibilityFX.js';
+import { isUsername } from '../functions/login/usernameFX.js';
 
 export default class {
 
@@ -14,12 +14,25 @@ export default class {
     const root = document.querySelector('body');
     root.innerHTML = LoginUI();
 
-    // écoute si affichage du password
+    // écoute si volonté d'affichage du password
     setPasswordVisibility();
 
-    // accès au site i password correct
-    checkPassword();
-    
+    // au clic sur le bouton 'Login'
+    const loginButton = document.querySelector('button.button-login');
+    loginButton.addEventListener('click', () => {
+
+      // si le nom d'utilisateur est correct...
+      const inputUsername = document.getElementById('username').value;
+      if (isUsername(inputUsername)) {
+
+        // ...chargement de l'url
+        window.location.href = window.location.origin + '/src/index.html#prime-calculator';
+        // window.location.href = window.location.origin + '/Prime-app/dist/index.html#prime-calculator';
+        
+      }
+
+    });
+
   }
 
 }
