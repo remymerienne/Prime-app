@@ -1,17 +1,20 @@
-Sand box :
-**********
+Todo :
+------
+- Branche develop à jour distant mais non-mergée sur Main
+- Finir test d'intégration de la fonctionnalité hide/show password
+
+*******************************************************************************
 
 Ajouter à README :
-
+------------------
 - faire une section sur live-server
 - pull origin et tags dans README
 - git fetch origin
 - git fetch --prune => supprimer le visuel des branches déjà supprimée
+- json-server --w data_base.json (a revoir pour travail avec fetch)
+- <link rel="preload" href="./src/css/app.css" as="style">
 
-=> json-server --w data_base.json (a revoir pour travail avec fetch)
-
-<link rel="preload" href="./src/css/app.css" as="style">
-
+*******************************************************************************
 
 Git Flow :
 ----------
@@ -27,13 +30,11 @@ Extra :
 Chore : Autres tâches
 Experiment : Test de fonctionnalité ou autre...
 
-
-===============================================================================
+*******************************************************************************
 
 Webpack :
-*********
-
+---------
 Liens d'une config webpack :
-----------------------------
 https://www.geekco.fr/posts/fr/webpack-4-ma-configuration-pour-compiler-javascript-html-css-images-et-fonts
 
+*******************************************************************************
