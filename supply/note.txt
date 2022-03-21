@@ -1,7 +1,7 @@
 Todo :
 ------
-- Branche develop à jour distant mais non-mergée sur Main
 - Finir test d'intégration de la fonctionnalité hide/show password
+- README configuration de git
 
 *******************************************************************************
 
