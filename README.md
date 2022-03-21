@@ -1,35 +1,74 @@
 # 1. Prime-app
 
+C'est ici que je teste les technologies que j'étudie :computer: , que je consigne mes notes :bookmark: , et répertorie les outils de développement que j'utilise :wrench:  
+Les pages en lignes font aussi partie de ces tests :smiley:
+
+## 1.1. Bibliothèque de badges
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)  
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)![GitKraken](https://img.shields.io/badge/GitKraken-179287?style=for-the-badge&logo=GitKraken&logoColor=white)
+
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+
+![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)![Testing-Library](https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white)
+
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)![Mac OS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
+
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF)![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
+
+![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)![Safari](https://img.shields.io/badge/Safari-000000?style=for-the-badge&logo=Safari&logoColor=white)
+
+![Dropbox](https://img.shields.io/badge/Dropbox-%233B4D98.svg?style=for-the-badge&logo=Dropbox&logoColor=white)![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)![Mega.nz](https://img.shields.io/badge/Mega-%23D90007.svg?style=for-the-badge&logo=Mega&logoColor=white)
+
+Badges markdown :  
+[https://github.com/Ileriayo/markdown-badges](https://github.com/Ileriayo/markdown-badges)  
+[https://github.com/alexandresanlim/Badges4-README.md-Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile)  
+[https://dev.to/envoy_/150-badges-for-github-pnk](https://dev.to/envoy_/150-badges-for-github-pnk)
+
+Complete list of github markdown emoji markup :  
+[https://gist.github.com/rxaviers/7360908](https://gist.github.com/rxaviers/7360908)
+
+***
+
 - [1. Prime-app](#1-prime-app)
-  - [1.1. npm](#11-npm)
-    - [1.1.1. Initialisation de npm](#111-initialisation-de-npm)
-    - [1.1.2. Liste des commandes de base](#112-liste-des-commandes-de-base)
-    - [1.1.3. Installation des dépendances de développement](#113-installation-des-dépendances-de-développement)
-  - [1.2. Purgecss](#12-purgecss)
-  - [1.3. Git et Github](#13-git-et-github)
-    - [1.3.1. Initialisation d'un dépôt](#131-initialisation-dun-dépôt)
-    - [1.3.2. Commiter les modifications](#132-commiter-les-modifications)
-    - [1.3.3. Types de commit](#133-types-de-commit)
-    - [1.3.4. Modèle de commit](#134-modèle-de-commit)
-    - [1.3.5. Les branches](#135-les-branches)
-  - [1.4. Badges markdown et émoji](#14-badges-markdown-et-émoji)
+  - [1.1. Bibliothèque de badges](#11-bibliothèque-de-badges)
+  - [1.2. npm](#12-npm)
+    - [1.2.1. Initialisation de npm](#121-initialisation-de-npm)
+    - [1.2.2. Liste des commandes de base](#122-liste-des-commandes-de-base)
+    - [1.2.3. Installation des dépendances de développement](#123-installation-des-dépendances-de-développement)
+  - [1.3. Purgecss](#13-purgecss)
+  - [1.4. Git](#14-git)
+    - [1.4.1. Installation sur Mac](#141-installation-sur-mac)
+    - [1.4.2. Configuration](#142-configuration)
+    - [1.4.3. Les tags](#143-les-tags)
+    - [1.4.4. Initialisation d'un dépôt](#144-initialisation-dun-dépôt)
+    - [1.4.5. Commiter les modifications](#145-commiter-les-modifications)
+    - [1.4.6. Types de commit](#146-types-de-commit)
+    - [1.4.7. Modèle de commit](#147-modèle-de-commit)
+    - [1.4.8. Les branches](#148-les-branches)
 
-## 1.1. npm
+***
 
-### 1.1.1. Initialisation de npm
+## 1.2. npm
+
+### 1.2.1. Initialisation de npm
 
 ```bash
 npm init -y
 ```
 
-### 1.1.2. Liste des commandes de base
+### 1.2.2. Liste des commandes de base
 
 ![supply/img_readme/npm-basic-commands.png](supply/img_readme/npm-basic-commands.png)
 
 Lien vers les options de package.json :  
 [https://docs.npmjs.com/cli/v8/configuring-npm/package-json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
 
-### 1.1.3. Installation des dépendances de développement
+### 1.2.3. Installation des dépendances de développement
 
 Liste des dépendances :
 - Webpack :
@@ -89,7 +128,7 @@ Commandes npm à coller dans package.json :
 "server-dist": "live-server --port=8080 --open=\"dist/index.html\""
 ```
 
-## 1.2. Purgecss
+## 1.3. Purgecss
 
 Installation (en global seulement) :
 ```bash
@@ -99,9 +138,85 @@ npm i -g purgecss
 Liens vers la documentation :  
 [https://purgecss.com](https://purgecss.com)
 
-## 1.3. Git et Github
+## 1.4. Git
 
-### 1.3.1. Initialisation d'un dépôt
+### 1.4.1. Installation sur Mac
+
+Installer **Homebrew** en suivant la procédure [ici](https://brew.sh/index_fr) .
+
+Pour vérifier sa version de **Homebrew** :
+
+```bash
+brew --version
+```
+
+Si besoin mettre à jour **Homebrew** avec :
+
+```bash
+brew update
+```
+
+Puis, installer **Git** :
+
+```bash
+brew install git
+```
+
+Pour contrôler sa version de **Git** :
+
+```bash
+git --version
+```
+
+Page officielle avec la dernière version de **Git** [ici](http://git-scm.com/downloads)
+
+### 1.4.2. Configuration
+
+Renseigner son nom :
+
+```bash
+git config --global user.name "John Doe"
+```
+
+Son email :
+
+```bash
+git config --global user.email "johndoe@example.com"
+```
+
+### 1.4.3. Les tags
+
+Création d'un tag simple :  
+
+```bash
+git tag <tagname>
+```
+
+(**tagname** est à remplacer par un identifiant sémantique de type **v1.0.0**)
+
+Un tag annoté contiendra des métadonnées supplémentaires sous forme de message,  telles que le nom du créateur, la date, son email :
+
+```bash
+git tag -a <tagname>
+```
+
+Repertorier les tags :
+
+```bash
+git tag
+```
+
+Envoyer le tag sur un dépot distant :
+
+```bash
+git push origin <tagname>
+```
+
+Plus d'infos sur les tags [ici ](https://www.atlassian.com/fr/git/tutorials/inspecting-a-repository/git-tag)(altassian.com)
+
+***
+
+### 1.4.4. Initialisation d'un dépôt
 
 Après avoir créer un repo Github :
 
@@ -115,7 +230,7 @@ git remote add origin https://github.com/mondepot/projet
 git push -u origin main
 ```
 
-### 1.3.2. Commiter les modifications
+### 1.4.5. Commiter les modifications
 
 Sélection des fichiers à commiter :
 ```bash
@@ -132,11 +247,11 @@ Commit des fichiers sélectionnés sur la branche courante :
 git commit -m "message de commit"
 ```
 
-### 1.3.3. Types de commit
+### 1.4.6. Types de commit
 
 ![supply/img_readme/commit-guide.png](supply/img_readme/commit-guide.png)
 
-### 1.3.4. Modèle de commit
+### 1.4.7. Modèle de commit
 
 ```bash
 [FIX] index (#9): change alt text images
@@ -146,59 +261,55 @@ Alt text images must be different than images name in "Activity" section.
 Closes #9
 ```
 
-### 1.3.5. Les branches
+### 1.4.8. Les branches
 
 Voir les branches éxistantes :
+
 ```bash
 git branch
 ```
 
 Créer une nouvelle branche :
+
 ```bash
 git branch <nouvelle branche>
 ```
 
 Changer de branche :
+
 ```bash
 git checkout <branche>
 ```
 
 Push d'une branche local sur une branche distante :
+
 ```bash
 git push <remote> <branche>
 ```
 
 Renommer une branche :
+
 ```bash
 git branch -m <old branch> <new name>
 ```
 
 Supprimer une branche :
+
 ```bash
 git branch -d <branche>
 ```
 
 Supprimer une branche distante :
+
 ```bash
 git push <remote> --delete <branche>
 ```
 
 Ramener une branche sur la branche courante en concervant l'historique :
+
 ```bash
 git merge --no-ff <branch>
 ```
 
 Liens vers la documentation :  
 [https://git-scm.com/docs](https://git-scm.com/docs) 
-
-## 1.4. Badges markdown et émoji
-
-Badges markdown :  
-[https://github.com/Ileriayo/markdown-badges](https://github.com/Ileriayo/markdown-badges)  
-[https://github.com/alexandresanlim/Badges4-README.md-Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile)  
-[https://dev.to/envoy_/150-badges-for-github-pnk](https://dev.to/envoy_/150-badges-for-github-pnk)
-
-Complete list of github markdown emoji markup :  
-[https://gist.github.com/rxaviers/7360908](https://gist.github.com/rxaviers/7360908)
-
-***

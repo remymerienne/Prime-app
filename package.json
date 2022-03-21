@@ -8,7 +8,7 @@
     "sass": "sass src/sass/app.scss css/app.css --watch",
     "purge": "purgecss --css css/app.css --content src/index.html dist/app.bundle.js -o dist -font -keyframes",
     "test": "jest --watch --verbose",
-    "test-unit": "jest -t Unit Test Suites",
+    "test-unit": "jest -t Unit Test Suites --no-verbose",
     "test-cov": "jest --coverage",
     "server-src": "live-server --port=5501 --open=\"src/index.html\"",
     "server-dist": "live-server --port=5502 --open=\"dist/index.html\""
