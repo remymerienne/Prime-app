@@ -2,6 +2,7 @@ Todo :
 ------
 - Finir test d'intégration de la fonctionnalité hide/show password
 - README configuration de git
+- Finir le regroupement ds fonctionnalités dans la classe login
 
 *******************************************************************************
 
