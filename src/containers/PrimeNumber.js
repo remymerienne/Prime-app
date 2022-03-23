@@ -1,6 +1,5 @@
 import PrimeNumberUI from '../views/PrimeNumberUI.js';
 import PrimeNumberListUI from '../views/PrimeNumberListUI.js';
-import { getPrimeNumberArray } from '../functions/prime-number/primeNumberFX.js';
 
 export default class {
 
@@ -8,7 +7,27 @@ export default class {
     document.title = 'Nombres premiers';
   }
 
-  async getHTML() {
+  isTreatable(number){
+      if (number < 2 || isNaN(number)) return false;
+      return true;
+  }
+
+  isPrimeNumber(number){
+      for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0 || this.isTreatable(number) === false) return false;
+      }
+      return true;
+  }
+
+  getPrimeNumberArray(numberUpTo) {
+    const primeNumberArray = [];
+    for (let i = 2; i <= numberUpTo; i++) {
+      if (this.isPrimeNumber(i)) primeNumberArray.push(i);
+    }
+    return primeNumberArray;
+  }
+
+  getHTML() {
 
     // injection de la base html dans le 'body'
     const root = document.querySelector('body');
@@ -18,12 +37,12 @@ export default class {
     const elementListened = document.getElementById('prime-up-to');
     elementListened.addEventListener('keyup', e => {
 
-      // création de la liste de nombre premier
-      const myList = PrimeNumberListUI(getPrimeNumberArray(e.target.value));
+      // création de la liste de nombres premiers
+      const viewList = PrimeNumberListUI(this.getPrimeNumberArray(e.target.value));
 
       // injection de la liste générée dans la base html
       const target = document.getElementById('js-prime');
-      target.innerHTML = myList;
+      target.innerHTML = viewList;
 
     });
 
