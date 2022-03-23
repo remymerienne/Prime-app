@@ -1,5 +1,5 @@
 export default () => {
-  return `
+	return `
     <main class="main">
       <section class="prime">
         <header class="prime-header">
