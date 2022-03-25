@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import PrimeNumber from '../containers/PrimeNumber';
+import PrimeNumber from '../containers/PrimeNumber.js';
 
 describe('isTreatable() Unit Test Suites', () => {
 	test('A number less than 2 should return false', () => {
