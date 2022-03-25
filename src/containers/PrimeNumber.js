@@ -6,8 +6,6 @@ export default class {
 		document.title = 'Nombres premiers';
 	}
 
-	// ! #1. Création de l'array de nombres premiers - Start -
-
 	isTreatable(number) {
 		if (number < 2 || isNaN(number)) return false;
 		return true;
@@ -28,25 +26,15 @@ export default class {
 		return primeNumberArray;
 	}
 
-	// ! #1. Création de l'array de nombres premiers - End -
-
 	getHTML() {
-		// injection de la base HTML dans le 'body'
-		const root = document.querySelector('body');
+		const root = document.getElementById('root');
 		root.innerHTML = PrimeNumberUI();
-
-		// écoute de l'entrée utilisateur
 		const elementListened = document.getElementById('prime-up-to');
 		elementListened.addEventListener('keyup', (e) => {
-			// création de la liste de nombres premiers
 			const viewList = PrimeNumberListUI(this.getPrimeNumberArray(e.target.value));
-
-			// injection de la liste générée dans la base HTML
 			const target = document.getElementById('js-prime');
 			target.innerHTML = viewList;
 		});
-
-		// empèche le rechargement de la page si press enter dans input
 		elementListened.addEventListener('keydown', (e) => {
 			if (e.key === 'Enter') e.preventDefault();
 		});
