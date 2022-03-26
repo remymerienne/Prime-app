@@ -3,6 +3,8 @@
 C'est ici que je teste les technologies que j'étudie :computer: , que je consigne mes notes :bookmark: , et répertorie les outils de développement que j'utilise :wrench:  
 Les pages en lignes font aussi partie de ces tests :smiley:
 
+https://github.com/a11y-badges/a11y-markdown-badges
+
 ## 1.1. Bibliothèque de badges
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)  
@@ -27,12 +29,12 @@ Les pages en lignes font aussi partie de ces tests :smiley:
 Badges markdown :  
 [https://github.com/Ileriayo/markdown-badges](https://github.com/Ileriayo/markdown-badges)  
 [https://github.com/alexandresanlim/Badges4-README.md-Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile)  
-[https://dev.to/envoy_/150-badges-for-github-pnk](https://dev.to/envoy_/150-badges-for-github-pnk)
+[https://dev.to/envoy\_/150-badges-for-github-pnk](https://dev.to/envoy_/150-badges-for-github-pnk)
 
 Complete list of github markdown emoji markup :  
 [https://gist.github.com/rxaviers/7360908](https://gist.github.com/rxaviers/7360908)
 
-***
+---
 
 - [1. Prime-app](#1-prime-app)
   - [1.1. Bibliothèque de badges](#11-bibliothèque-de-badges)
@@ -42,16 +44,11 @@ Complete list of github markdown emoji markup :
     - [1.2.3. Installation des dépendances de développement](#123-installation-des-dépendances-de-développement)
   - [1.3. Purgecss](#13-purgecss)
   - [1.4. Git](#14-git)
-    - [1.4.1. Installation sur Mac](#141-installation-sur-mac)
-    - [1.4.2. Configuration](#142-configuration)
     - [1.4.3. Les tags](#143-les-tags)
     - [1.4.4. Initialisation d'un dépôt](#144-initialisation-dun-dépôt)
-    - [1.4.5. Commiter les modifications](#145-commiter-les-modifications)
-    - [1.4.6. Types de commit](#146-types-de-commit)
-    - [1.4.7. Modèle de commit](#147-modèle-de-commit)
     - [1.4.8. Les branches](#148-les-branches)
 
-***
+---
 
 ## 1.2. npm
 
@@ -71,6 +68,7 @@ Lien vers les options de package.json :
 ### 1.2.3. Installation des dépendances de développement
 
 Liste des dépendances :
+
 - Webpack :
   - webpack
   - webpack-cli
@@ -87,10 +85,11 @@ Liste des dépendances :
   - jest
   - @testing-library/dom
   - @types/jest
-  
+
 @testing-library/jest-dom => a voir pour les customes matchers et user-event
 
 Coller dans package.json :
+
 ```json
 "devDependencies": {
   "@babel/core": "^7.17.5",
@@ -108,16 +107,19 @@ Coller dans package.json :
 ```
 
 Installer les dépendances :
+
 ```bash
 npm install
 ```
 
 Mise à jour des dépendances (optionnelle) :
+
 ```bash
 npm update
 ```
 
 Commandes npm à coller dans package.json :
+
 ```json
 "build": "webpack --config webpack.config.js",
 "sass": "sass src/sass/app.scss css/app.css --watch",
@@ -131,6 +133,7 @@ Commandes npm à coller dans package.json :
 ## 1.3. Purgecss
 
 Installation (en global seulement) :
+
 ```bash
 npm i -g purgecss
 ```
@@ -140,53 +143,9 @@ Liens vers la documentation :
 
 ## 1.4. Git
 
-### 1.4.1. Installation sur Mac
-
-Installer **Homebrew** en suivant la procédure [ici](https://brew.sh/index_fr) .
-
-Pour vérifier sa version de **Homebrew** :
-
-```bash
-brew --version
-```
-
-Si besoin mettre à jour **Homebrew** avec :
-
-```bash
-brew update
-```
-
-Puis, installer **Git** :
-
-```bash
-brew install git
-```
-
-Pour contrôler sa version de **Git** :
-
-```bash
-git --version
-```
-
-Page officielle avec la dernière version de **Git** [ici](http://git-scm.com/downloads)
-
-### 1.4.2. Configuration
-
-Renseigner son nom :
-
-```bash
-git config --global user.name "John Doe"
-```
-
-Son email :
-
-```bash
-git config --global user.email "johndoe@example.com"
-```
-
 ### 1.4.3. Les tags
 
-Création d'un tag simple :  
+Création d'un tag simple :
 
 ```bash
 git tag <tagname>
@@ -194,7 +153,7 @@ git tag <tagname>
 
 (**tagname** est à remplacer par un identifiant sémantique de type **v1.0.0**)
 
-Un tag annoté contiendra des métadonnées supplémentaires sous forme de message,  telles que le nom du créateur, la date, son email :
+Un tag annoté contiendra des métadonnées supplémentaires sous forme de message, telles que le nom du créateur, la date, son email :
 
 ```bash
 git tag -a <tagname>
@@ -214,13 +173,14 @@ git push origin <tagname>
 
 Plus d'infos sur les tags [ici ](https://www.atlassian.com/fr/git/tutorials/inspecting-a-repository/git-tag)(altassian.com)
 
-***
+---
 
 ### 1.4.4. Initialisation d'un dépôt
 
 Après avoir créer un repo Github :
 
 Initialiser son dépôt en local :
+
 ```bash
 git init
 git add -A
@@ -230,36 +190,7 @@ git remote add origin https://github.com/mondepot/projet
 git push -u origin main
 ```
 
-### 1.4.5. Commiter les modifications
-
-Sélection des fichiers à commiter :
-```bash
-git add <fichier>
-```
-
 Sélectionner tous les fichiers modifiés :
-```bash
-git add -A
-```
-
-Commit des fichiers sélectionnés sur la branche courante :
-```bash
-git commit -m "message de commit"
-```
-
-### 1.4.6. Types de commit
-
-![supply/img_readme/commit-guide.png](supply/img_readme/commit-guide.png)
-
-### 1.4.7. Modèle de commit
-
-```bash
-[FIX] index (#9): change alt text images
-
-Alt text images must be different than images name in "Activity" section.
-
-Closes #9
-```
 
 ### 1.4.8. Les branches
 
@@ -312,4 +243,4 @@ git merge --no-ff <branch>
 ```
 
 Liens vers la documentation :  
-[https://git-scm.com/docs](https://git-scm.com/docs) 
+[https://git-scm.com/docs](https://git-scm.com/docs)
