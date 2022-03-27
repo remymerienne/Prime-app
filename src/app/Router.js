@@ -1,28 +1,17 @@
-import PrimeNumber from '../containers/PrimeNumber.js';
 import Login from '../containers/Login.js';
-import ROUTES_PATH from '../constants/routes.js';
+import PrimeNumber from '../containers/PrimeNumber.js';
+import { ROUTES_PATH, RENDER } from '../constants/routes.js';
 
-const router = () => {
-
-  // let currentPath = '/Prime-app/dist/' + window.location.href.split('/').pop();
-  const currentPath = '/src/' + window.location.href.split('/').pop();
-
-  if (currentPath === ROUTES_PATH.Home) {
-    const myLogin = new Login();
-    myLogin.getHTML();
-  }
-
-  if (currentPath === ROUTES_PATH.Prime) {
-    const myList = new PrimeNumber();
-    myList.getHTML();
-  }
-
+export const router = () => {
+  const currentPath = ROUTES_PATH.Hosting + window.location.href.split('/').pop();
+  const root = document.getElementById('root');
+  root.innerHTML = RENDER(currentPath);
+  if (currentPath === ROUTES_PATH.Home) new Login();
+  if (currentPath === ROUTES_PATH.Prime) new PrimeNumber();
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  
   router();
-  
 });
 
 window.addEventListener('popstate', router);
