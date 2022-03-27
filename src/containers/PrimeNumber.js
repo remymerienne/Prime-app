@@ -1,9 +1,13 @@
-import PrimeNumberUI from '../views/PrimeNumberUI.js';
-import PrimeNumberListUI from '../views/PrimeNumberListUI.js';
-
 export default class {
   constructor() {
-    document.title = 'Nombres premiers';
+    const elementListened = document.getElementById('prime-up-to');
+    elementListened.addEventListener('keyup', (e) => {
+      this.getlistHtml(e);
+    });
+
+    elementListened.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') e.preventDefault();
+    });
   }
 
   isTreatable(number) {
@@ -26,17 +30,28 @@ export default class {
     return primeNumberArray;
   }
 
-  getHTML() {
-    const root = document.getElementById('root');
-    root.innerHTML = PrimeNumberUI();
-    const elementListened = document.getElementById('prime-up-to');
-    elementListened.addEventListener('keyup', (e) => {
-      const viewList = PrimeNumberListUI(this.getPrimeNumberArray(e.target.value));
-      const target = document.getElementById('js-prime');
-      target.innerHTML = viewList;
-    });
-    elementListened.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') e.preventDefault();
-    });
+  getPrimeNumberList(primeNumberArray) {
+    const getPrimeNumberRow = () => primeNumberArray.map((e) => e).join(' - ');
+    const getHowMany = () => primeNumberArray.length.toLocaleString();
+    if (primeNumberArray.length >= 1) {
+      return `
+      <div class="prime-info">
+        <p>${getHowMany()} nombres trouvées</p>
+        <a href="../coverage/lcov-report/index.html" target="_blank">Test coverage</a>
+      </div>
+      <p class="prime-list" data-testid="input-valid">${getPrimeNumberRow()}</p>
+    `;
+    } else {
+      return `
+      <div data-testid="input-null"></div>
+    `;
+    }
+  }
+
+  getlistHtml(e) {
+    const array = this.getPrimeNumberArray(e.target.value);
+    const viewList = this.getPrimeNumberList(array);
+    const target = document.getElementById('js-prime');
+    target.innerHTML = viewList;
   }
 }

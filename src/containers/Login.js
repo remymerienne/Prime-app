@@ -7,7 +7,6 @@ export default class {
       const username = document.getElementById('username').value;
       if (this.isUsername(username)) this.handleCLickPrimeNumber();
     });
-
     const allEye = document.querySelectorAll('i.js-eye');
     allEye.forEach((element) => {
       element.addEventListener('click', () => {
