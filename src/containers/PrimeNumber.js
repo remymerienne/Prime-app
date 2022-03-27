@@ -2,11 +2,11 @@ export default class {
   constructor() {
     const elementListened = document.getElementById('prime-up-to');
     elementListened.addEventListener('keyup', (e) => {
-      this.getlistHtml(e);
+      this.getHtml(e);
     });
 
     elementListened.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') e.preventDefault();
+      this.preventEnterKeyPress(e);
     });
   }
 
@@ -48,7 +48,11 @@ export default class {
     }
   }
 
-  getlistHtml(e) {
+  preventEnterKeyPress(e) {
+    if (e.key === 'Enter') e.preventDefault();
+  }
+
+  getHtml(e) {
     const array = this.getPrimeNumberArray(e.target.value);
     const viewList = this.getPrimeNumberList(array);
     const target = document.getElementById('js-prime');
