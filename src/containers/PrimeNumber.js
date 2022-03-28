@@ -6,7 +6,7 @@ export default class {
     });
 
     elementListened.addEventListener('keydown', (e) => {
-      this.preventEnterKeyPress(e);
+      this.prevent(e);
     });
   }
 
@@ -48,7 +48,7 @@ export default class {
     }
   }
 
-  preventEnterKeyPress(e) {
+  prevent(e) {
     if (e.key === 'Enter') e.preventDefault();
   }
 

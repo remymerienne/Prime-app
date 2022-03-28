@@ -2,9 +2,10 @@
  * @jest-environment jsdom
  */
 
-import { fireEvent, screen } from '@testing-library/dom';
+// import { fireEvent, screen } from '@testing-library/dom';
 import PrimeNumber from '../containers/PrimeNumber.js';
 import PrimeNumberUI from '../views/PrimeNumberUI.js';
+// import { router } from '../app/Router.js';
 
 beforeEach(() => {
   document.body.innerHTML = '';
@@ -52,17 +53,20 @@ describe('getPrimeNumberArray() Unit Test Suites', () => {
   });
 });
 
-describe('Given I am on Prime Numbers Page', () => {
-  describe('When I press Enter in input field', () => {
-    test('Then, nothing should happen', () => {
-      document.body.innerHTML = PrimeNumberUI();
-      const myList = new PrimeNumber();
-      const inputZone = screen.getByTestId('js-input');
-      inputZone.addEventListener('keydown', (e) => {
-        myList.preventEnterKeyPress(e);
-      });
-      fireEvent.keyDown(inputZone, { target: { key: 'Enter' } });
-      expect(inputZone).toBeTruthy();
-    });
-  });
-});
+// describe('Given I am on Prime Numbers Page', () => {
+//   describe('When I press Enter in input field', () => {
+//     test('Then, nothing should happen', () => {
+//       document.body.innerHTML = PrimeNumberUI();
+//       const myList = new PrimeNumber();
+//       const inputZone = screen.getByTestId('js-input');
+//       inputZone.addEventListener('keydown', (e) => {
+//         myList.test(e);
+//       });
+//       fireEvent.keyDown(inputZone, { keyCode: 13 });
+
+//       // location.reload();
+//       console.log(window.location.href);
+//       // expect(inputZone).toBeTruthy();
+//     });
+//   });
+// });
