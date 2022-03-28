@@ -21,6 +21,7 @@
     - [1.2.7. Les remotes](#127-les-remotes)
     - [1.2.8. Fetch](#128-fetch)
     - [1.2.9. Les tags](#129-les-tags)
+    - [1.2.10. .Gitignore](#1210-gitignore)
   - [1.3. Markdown](#13-markdown)
 
 ---
@@ -257,6 +258,18 @@ Un tag annoté contiendra des métadonnées supplémentaires sous forme de messa
 Envoyer le tag sur un dépot distant :
 
 `$ git push origin <tagname>`
+
+---
+
+### 1.2.10. .Gitignore
+
+Pour désindexer des fichiers ajoutés au .gitignore :
+
+`$ git rm -r --cached .`
+
+`$ git add .`
+
+`$ git commit -m "fixed untracked files`
 
 ---
 
