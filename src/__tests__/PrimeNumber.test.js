@@ -59,8 +59,10 @@ describe('Given I am on Prime Numbers Page', () => {
       const myList = new PrimeNumber();
       const prevent = jest.fn((e) => myList.prevent(e));
       const inputZone = screen.getByTestId('js-input');
-      inputZone.addEventListener('keydown', (e) => prevent(e));
-      fireEvent.keyDown(inputZone, { keyCode: 13 });
+      inputZone.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') prevent(e);
+      });
+      fireEvent.keyDown(inputZone, { key: 'Enter' });
       expect(prevent).toHaveBeenCalled();
     });
   });
