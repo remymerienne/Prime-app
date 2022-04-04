@@ -1,8 +1,18 @@
-# 1. Mémo
+# 1. Prime-app
 
----
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-- [1. Mémo](#1-mémo)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
+
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)![Testing-Library](https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white)
+
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+
+***
+
+- [1. Prime-app](#1-prime-app)
   - [1.1. Homebrew](#11-homebrew)
     - [1.1.1. Installation](#111-installation)
     - [1.1.2. Vérification de version](#112-vérification-de-version)
@@ -24,7 +34,7 @@
     - [1.2.10. .Gitignore](#1210-gitignore)
   - [1.3. Markdown](#13-markdown)
 
----
+***
 
 ## 1.1. Homebrew
 
@@ -46,7 +56,7 @@ Suivre les instruction du site officiel.
 
 `$ brew update`
 
----
+***
 
 ## 1.2. Git
 
@@ -259,7 +269,7 @@ Envoyer le tag sur un dépot distant :
 
 `$ git push origin <tagname>`
 
----
+***
 
 ### 1.2.10. .Gitignore
 
@@ -271,21 +281,23 @@ Pour désindexer des fichiers ajoutés au .gitignore :
 
 `$ git commit -m "fixed untracked files`
 
----
+***
 
 ## 1.3. Markdown
 
-![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+![Markdown](https://a11ybadges.com/badge?logo=markdown)
 
 Badges markdown :
 
-https://github.com/a11y-badges/a11y-markdown-badges  
+Grandes tailles :  
+https://github.com/a11y-badges/a11y-markdown-badges
+
+Badges normaux :  
 https://github.com/Ileriayo/markdown-badges  
 https://github.com/alexandresanlim/Badges4-README.md-Profile  
 https://dev.to/envoy_/150-badges-for-github-pnk
 
-Complete list of github markdown emoji markup :
-
+Complete list of github markdown emoji markup :  
 https://gist.github.com/rxaviers/7360908
 
----
+***
