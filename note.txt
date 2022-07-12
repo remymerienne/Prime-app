@@ -7,25 +7,8 @@ Todo :
 
 Ajouter à README :
 ------------------
-- faire une section sur live-server
 - json-server --w data_base.json (a revoir pour travail avec fetch)
 - <link rel="preload" href="./src/css/app.css" as="style">
-
-*******************************************************************************
-
-Git Flow :
-----------
-Main : Branche de distribution
-Develop : Branche de développement
-Feature : Développement de fonctionnalité
-Hotfix : Correction de bug critique
-Release : Préparation de version
-Support : Maintenance de version passée
-
-Extra :
--------
-Chore : Autres tâches
-Experiment : Test de fonctionnalité ou autre...
 
 *******************************************************************************
 
